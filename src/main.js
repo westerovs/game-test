@@ -2,6 +2,9 @@ class GameTest {
   #levelsPath = './src/assets/levels/gameConfig/levels.json'
   #backgroundsPath = './src/assets/levels/backgrounds'
   #wrapper = null
+  #backgroundItems = []
+  #currentPreviewIndex = -1
+  #preview = null
   
   constructor() {
     this.init()
@@ -12,6 +15,12 @@ class GameTest {
     this.#createWrapper()
     this.#renderBackgrounds(levels)
     this.#setEvents()
+  }
+  
+  #setEvents = () => {
+    this.#wrapper.addEventListener('click', this.#onBackgroundClick)
+    document.addEventListener('click', this.#onPreviewClick)
+    document.addEventListener('keydown', this.#onDocumentKeydown)
   }
   
   #loadLevels = async () => {
@@ -26,11 +35,15 @@ class GameTest {
   }
   
   #renderBackgrounds = levels => {
+    this.#backgroundItems = []
+    
     Object.keys(levels).forEach(levelKey => {
       const levelIndex = levelKey.replace('level', '')
       const levelData = levels[levelKey]
       
       const background = this.#createBackgroundItem(levelIndex, levelData.spineName)
+      
+      this.#backgroundItems.push(background)
       this.#wrapper.appendChild(background)
     })
   }
@@ -39,10 +52,11 @@ class GameTest {
     const background = document.createElement('div')
     background.className = 'background'
     background.dataset.src = `${this.#backgroundsPath}/back_lv${levelIndex}.webp`
+    background.dataset.title = `${levelIndex} - ${spineName}`
     
     const label = document.createElement('div')
     label.className = 'background__label'
-    label.textContent = `${levelIndex} - ${spineName}`
+    label.textContent = background.dataset.title
     
     const img = document.createElement('img')
     img.src = background.dataset.src
@@ -53,12 +67,6 @@ class GameTest {
     return background
   }
   
-  #setEvents = () => {
-    this.#wrapper.addEventListener('click', this.#onBackgroundClick)
-    document.addEventListener('click', this.#onPreviewClick)
-    document.addEventListener('keydown', this.#onDocumentKeydown)
-  }
-  
   #onBackgroundClick = event => {
     const background = event.target.closest('.background')
     
@@ -66,15 +74,22 @@ class GameTest {
       return
     }
     
-    const label = background.querySelector('.background__label')
+    const index = this.#backgroundItems.indexOf(background)
     
-    this.#openPreview(background.dataset.src, label.textContent)
+    if (index === -1) {
+      return
+    }
+    
+    this.#currentPreviewIndex = index
+    this.#openPreview()
   }
   
   #onPreviewClick = event => {
-    const preview = event.target.closest('.preview')
+    if (!this.#preview) {
+      return
+    }
     
-    if (!preview) {
+    if (event.target !== this.#preview) {
       return
     }
     
@@ -82,42 +97,116 @@ class GameTest {
   }
   
   #onDocumentKeydown = event => {
-    if (event.key !== 'Escape') {
+    if (!this.#preview) return
+    
+    if (
+      event.key === 'ArrowRight' ||
+      event.key === 'ArrowDown' ||
+      event.key === 'ArrowLeft' ||
+      event.key === 'ArrowUp'
+    ) {
+      event.preventDefault()
+    }
+    
+    if (event.key === 'Escape') {
+      this.#closePreview()
       return
     }
     
-    this.#closePreview()
+    if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+      this.#showNextPreview()
+      return
+    }
+    
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+      this.#showPrevPreview()
+    }
   }
   
-  #openPreview = (src, text) => {
-    if (document.querySelector('.preview')) {
+  #openPreview = () => {
+    const currentBackground = this.#backgroundItems[this.#currentPreviewIndex]
+    
+    if (!currentBackground) {
       return
     }
     
-    const preview = document.createElement('div')
-    preview.className = 'preview'
+    const currentSrc = currentBackground.dataset.src
+    const currentTitle = currentBackground.dataset.title
     
-    const title = document.createElement('div')
-    title.className = 'preview__title'
-    title.textContent = text
+    if (!this.#preview) {
+      this.#preview = document.createElement('div')
+      this.#preview.className = 'preview'
+      
+      const title = document.createElement('div')
+      title.className = 'preview__title'
+      
+      const img = document.createElement('img')
+      img.className = 'preview__image'
+      img.alt = 'preview'
+      
+      this.#preview.append(title, img)
+      this.#preview.addEventListener('wheel', this.#onPreviewWheel, { passive: false })
+      
+      document.body.appendChild(this.#preview)
+    }
     
-    const img = document.createElement('img')
-    img.className = 'preview__image'
-    img.src = src
-    img.alt = 'preview'
+    const title = this.#preview.querySelector('.preview__title')
+    const img = this.#preview.querySelector('.preview__image')
     
-    preview.append(title, img)
-    document.body.appendChild(preview)
+    title.textContent = currentTitle
+    img.src = currentSrc
   }
   
   #closePreview = () => {
-    const preview = document.querySelector('.preview')
-    
-    if (!preview) {
+    if (!this.#preview) {
       return
     }
     
-    preview.remove()
+    this.#preview.removeEventListener('wheel', this.#onPreviewWheel)
+    this.#preview.remove()
+    this.#preview = null
+    this.#currentPreviewIndex = -1
+  }
+  
+  #onPreviewWheel = event => {
+    event.preventDefault()
+    
+    if (event.deltaY > 0) {
+      this.#showNextPreview()
+      return
+    }
+    
+    if (event.deltaY < 0) {
+      this.#showPrevPreview()
+    }
+  }
+  
+  #showNextPreview = () => {
+    if (!this.#backgroundItems.length) {
+      return
+    }
+    
+    this.#currentPreviewIndex += 1
+    
+    if (this.#currentPreviewIndex >= this.#backgroundItems.length) {
+      this.#currentPreviewIndex = 0
+    }
+    
+    this.#openPreview()
+  }
+  
+  #showPrevPreview = () => {
+    if (!this.#backgroundItems.length) {
+      return
+    }
+    
+    this.#currentPreviewIndex -= 1
+    
+    if (this.#currentPreviewIndex < 0) {
+      this.#currentPreviewIndex = this.#backgroundItems.length - 1
+    }
+    
+    this.#openPreview()
   }
 }
 
