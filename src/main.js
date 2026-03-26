@@ -1,4 +1,5 @@
-import {createBackgroundCard} from './scripts/components/backgroundCard.js'
+import {createBackgroundCard} from './scripts/components/backgroundCardTemplate.js'
+import {previewTemplate} from './scripts/components/previewTemplate.js'
 
 class GameTest {
   #levelsPath = './src/assets/levels/gameConfig/levels.json'
@@ -6,7 +7,8 @@ class GameTest {
   #storyRU = {}
   #storyEN = {}
   
-  #wrapper = document.querySelector('.wrapper')
+  #wrapper
+  #cards
   #backgroundItems = []
   #currentPreviewIndex = -1
   #preview = null
@@ -18,6 +20,9 @@ class GameTest {
   #imageObserver = null
   
   constructor() {
+    this.#wrapper = document.querySelector('.wrapper')
+    this.#cards = this.#wrapper.querySelector('.cards')
+    
     this.init()
   }
   
@@ -26,7 +31,7 @@ class GameTest {
     await this.#loadStories()
     
     this.#createImageObserver()
-    this.#renderBackgrounds(levels)
+    this.#renderBackgroundCards(levels)
     this.#setEvents()
   }
   
@@ -41,9 +46,9 @@ class GameTest {
     return res.json()
   }
   
-  #renderBackgrounds = levels => {
+  #renderBackgroundCards = levels => {
     this.#backgroundItems = []
-    
+
     Object.keys(levels).forEach(levelKey => {
       const levelIndex = levelKey.replace('level', '')
       const levelData = levels[levelKey]
@@ -51,7 +56,7 @@ class GameTest {
       const background = this.#createBackgroundItem(levelIndex, levelData.spineName)
       
       this.#backgroundItems.push(background)
-      this.#wrapper.appendChild(background)
+      this.#cards.appendChild(background)
     })
   }
   
@@ -144,20 +149,13 @@ class GameTest {
     const levelKey = currentBackground.dataset.levelKey
     
     if (!this.#preview) {
-      this.#preview = document.createElement('div')
-      this.#preview.className = 'preview'
+      const html = previewTemplate()
       
-      const title = document.createElement('div')
-      title.className = 'preview__title'
+      const template = document.createElement('template')
+      template.innerHTML = html.trim()
       
-      const img = document.createElement('img')
-      img.className = 'preview__image'
-      img.alt = 'preview'
+      this.#preview = template.content.firstElementChild
       
-      const story = document.createElement('div')
-      story.className = 'preview__story'
-      
-      this.#preview.append(title, img, story)
       this.#preview.addEventListener('wheel', this.#onPreviewWheel, { passive: false })
       this.#preview.addEventListener('click', this.#onPreviewContentClick)
       
