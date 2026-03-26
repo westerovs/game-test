@@ -17,17 +17,24 @@ export const storyBlockTemplate = ({ lang, title, data }) => {
       
       const rows = section.text.map((text, index) => {
         const speechId = section.speech?.[index] || ''
-        
-        return `
-          <div class="story-line">
+        const playControl = speechId
+          ? `
             <button
               class="story-line__play"
               type="button"
               data-lang="${lang}"
               data-section="${sectionType}"
               data-speech-id="${speechId}"
-              aria-label="play ${speechId || 'audio'}"
+              aria-label="play ${speechId}"
             >▶️</button>
+          `
+          : `
+            <span class="story-line__no-audio">❌</span>
+          `
+        
+        return `
+          <div class="story-line">
+            ${playControl}
             
             <p class="story-line__text">
               ${index + 1}) ${text.replace(/"/g, '')}

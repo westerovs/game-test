@@ -63,6 +63,8 @@ canvas {
   padding: 10px;
   background: gray;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .btn-is-active {
@@ -176,11 +178,20 @@ canvas {
 }
 
 .story-block__text {
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 10px;
   margin-top: 4px;
 }
 
+.story-line__no-audio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  background: white;
+}
 
 /*audio*/
 .story-line {

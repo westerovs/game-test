@@ -2,11 +2,13 @@ import {createBackgroundCard} from './scripts/components/backgroundCardTemplate.
 import {previewTemplate} from './scripts/components/previewTemplate.js'
 import {storyBlockTemplate} from './scripts/components/storyBlockTemplate.js'
 
+// todo вынести крупные блоки из лапшекода
 class GameTest {
   #levelsPath = './src/assets/levels/gameConfig/levels.json'
   #backgroundsPath = './src/assets/levels/backgrounds'
   #storyRU = {}
   #storyEN = {}
+  #unavailableSpeech = new Set()
   
   #wrapper
   #cards
@@ -35,6 +37,7 @@ class GameTest {
   init = async () => {
     const levels = await this.#loadLevels()
     await this.#loadStories()
+    await this.#cacheUnavailableSpeech()
     
     this.#createImageObserver()
     this.#renderBackgroundCards(levels)
@@ -276,7 +279,8 @@ class GameTest {
   }
   
   #renderStoryBlock = (lang, title, data) => {
-    const html = storyBlockTemplate({ lang, title, data })
+    const preparedData = this.#getPreparedStoryData(lang, data)
+    const html = storyBlockTemplate({lang, title, data: preparedData})
     
     const template = document.createElement('template')
     template.innerHTML = html.trim()
@@ -287,8 +291,8 @@ class GameTest {
   
   // ---------- audio
   #playSpeech = async (playBtn, lang, section, speechId) => {
-    if (!speechId) {
-      alert(this.#audioNotFoundMessage)
+    if (!speechId || !this.#isSpeechAvailable(lang, section, speechId)) {
+      this.#replacePlayBtnWithNoAudio(playBtn)
       return
     }
     
@@ -315,7 +319,9 @@ class GameTest {
       
       isHandled = true
       this.#stopSpeech()
-      alert(this.#audioNotFoundMessage)
+      
+      this.#unavailableSpeech.add(this.#getSpeechKey(lang, section, speechId))
+      this.#replacePlayBtnWithNoAudio(playBtn)
     }
     
     audio.addEventListener('error', handleAudioError, { once: true })
@@ -344,7 +350,6 @@ class GameTest {
       this.#activePlayBtn = null
     }
   }
-  
 
   #onAudioEnded = () => {
     this.#stopSpeech()
@@ -356,6 +361,104 @@ class GameTest {
     }
     
     playBtn.textContent = isPlaying ? '⏸️' : '▶️'
+  }
+  
+  #cacheUnavailableSpeech = async () => {
+    const checks = []
+    const addedKeys = new Set()
+    
+    const appendChecks = (lang, storyMap) => {
+      Object.values(storyMap).forEach(levelData => {
+        ;['intro', 'outro'].forEach(section => {
+          const speechList = levelData?.[section]?.speech
+          
+          if (!Array.isArray(speechList)) {
+            return
+          }
+          
+          speechList.forEach(speechId => {
+            if (!speechId) {
+              return
+            }
+            
+            const key = this.#getSpeechKey(lang, section, speechId)
+            
+            if (addedKeys.has(key)) {
+              return
+            }
+            
+            addedKeys.add(key)
+            
+            checks.push(
+              fetch(this.#getSpeechSrc(lang, section, speechId), { method: 'HEAD' })
+                .then(res => {
+                  if (!res.ok) {
+                    this.#unavailableSpeech.add(key)
+                  }
+                })
+                .catch(() => {
+                  this.#unavailableSpeech.add(key)
+                })
+            )
+          })
+        })
+      })
+    }
+    
+    appendChecks('ru', this.#storyRU)
+    appendChecks('en', this.#storyEN)
+    
+    await Promise.all(checks)
+  }
+  
+  #getPreparedStoryData = (lang, data) => {
+    if (!data) {
+      return data
+    }
+    
+    const preparedData = structuredClone(data)
+    
+    ;['intro', 'outro'].forEach(section => {
+      const speechList = preparedData?.[section]?.speech
+      
+      if (!Array.isArray(speechList)) {
+        return
+      }
+      
+      preparedData[section].speech = speechList.map(speechId => {
+        if (!speechId) {
+          return ''
+        }
+        
+        return this.#isSpeechAvailable(lang, section, speechId) ? speechId : ''
+      })
+    })
+    
+    return preparedData
+  }
+  
+  #getSpeechKey = (lang, section, speechId) => {
+    return `${lang}:${section}:${speechId}`
+  }
+  
+  #isSpeechAvailable = (lang, section, speechId) => {
+    return !this.#unavailableSpeech.has(this.#getSpeechKey(lang, section, speechId))
+  }
+  
+  #replacePlayBtnWithNoAudio = playBtn => {
+    if (!playBtn?.parentNode) {
+      return
+    }
+    
+    const noAudio = document.createElement('span')
+    noAudio.className = 'story-line__no-audio'
+    noAudio.textContent = '❌'
+    
+    playBtn.replaceWith(noAudio)
+    
+    if (this.#activePlayBtn === playBtn) {
+      this.#activePlayBtn = null
+    }
   }
   
   
