@@ -1,0 +1,627 @@
+{
+  "level0": {
+    "spineName": "level0",
+    "isRemote": false,
+    "amb": null
+  },
+  "level1": {
+    "spineName": "level1",
+    "isRemote": false,
+    "amb": "amb_city"
+  },
+  "level2": {
+    "spineName": "level2_shadows",
+    "isRemote": false,
+    "amb": null
+  },
+  "level3": {
+    "spineName": "level3",
+    "isRemote": false,
+    "amb": null
+  },
+  "level4": {
+    "spineName": "level4",
+    "isRemote": false,
+    "amb": "amb_street"
+  },
+  "level5": {
+    "spineName": "level125_anagrams",
+    "isRemote": false,
+    "amb": null
+  },
+  "level6": {
+    "spineName": "level6",
+    "isRemote": false,
+    "amb": "amb_stepsShop"
+  },
+  "level7": {
+    "spineName": "level131_identical_cup",
+    "isRemote": false,
+    "amb": null
+  },
+  "level8": {
+    "spineName": "level7",
+    "isRemote": false,
+    "amb": "amb_cafe"
+  },
+  "level9": {
+    "spineName": "level8",
+    "isRemote": false,
+    "amb": "amb_miniShop"
+  },
+  "level10": {
+    "spineName": "level9_generator",
+    "isRemote": false,
+    "amb": null
+  },
+  "level11": {
+    "spineName": "level10",
+    "isRemote": false,
+    "amb": "amb_workshop"
+  },
+  "level12": {
+    "spineName": "level11",
+    "isRemote": false,
+    "amb": "amb_kitchen"
+  },
+  "level13": {
+    "spineName": "level5_words",
+    "isRemote": false,
+    "amb": null
+  },
+  "level14": {
+    "spineName": "level12_shadows",
+    "isRemote": false,
+    "amb": "amb_eatery"
+  },
+  "level15": {
+    "spineName": "level13",
+    "isRemote": false,
+    "amb": null
+  },
+  "level16": {
+    "spineName": "level14",
+    "isRemote": false,
+    "amb": "amb_street"
+  },
+  "level17": {
+    "spineName": "level15_anagrams",
+    "isRemote": false,
+    "amb": null
+  },
+  "level18": {
+    "spineName": "level16",
+    "isRemote": false,
+    "amb": "amb_workshop"
+  },
+  "level19": {
+    "spineName": "level132_identical_origami",
+    "isRemote": false,
+    "amb": null
+  },
+  "level20": {
+    "spineName": "level17",
+    "isRemote": false,
+    "amb": null
+  },
+  "level21": {
+    "spineName": "level18",
+    "isRemote": false,
+    "amb": null
+  },
+  "level22": {
+    "spineName": "level19_generator",
+    "isRemote": false,
+    "amb": "amb_sea"
+  },
+  "level23": {
+    "spineName": "level20",
+    "isRemote": false,
+    "amb": "amb_workshop"
+  },
+  "level24": {
+    "spineName": "level21",
+    "isRemote": false,
+    "amb": "amb_kitchen"
+  },
+  "level25": {
+    "spineName": "level25_words",
+    "isRemote": false,
+    "amb": null
+  },
+  "level26": {
+    "spineName": "level22_shadows",
+    "isRemote": false,
+    "amb": null
+  },
+  "level27": {
+    "spineName": "level23",
+    "isRemote": false,
+    "amb": "amb_nature"
+  },
+  "level28": {
+    "spineName": "level24",
+    "isRemote": false,
+    "amb": "amb_shop"
+  },
+  "level29": {
+    "spineName": "level126_anagrams",
+    "isRemote": false,
+    "amb": null
+  },
+  "level30": {
+    "spineName": "level26",
+    "isRemote": false,
+    "amb": null
+  },
+  "level31": {
+    "spineName": "level133_identical_bag",
+    "isRemote": false,
+    "amb": null
+  },
+  "level32": {
+    "spineName": "level27",
+    "isRemote": false,
+    "amb": null
+  },
+  "level33": {
+    "spineName": "level28",
+    "isRemote": false,
+    "amb": "amb_workshop"
+  },
+  "level34": {
+    "spineName": "level29_generator",
+    "isRemote": false,
+    "amb": null
+  },
+  "level35": {
+    "spineName": "level30",
+    "isRemote": false,
+    "amb": null
+  },
+  "level36": {
+    "spineName": "level31",
+    "isRemote": false,
+    "amb": "amb_kitchen"
+  },
+  "level37": {
+    "spineName": "level127_words",
+    "isRemote": false,
+    "amb": null
+  },
+  "level38": {
+    "spineName": "level32_shadows",
+    "isRemote": false,
+    "amb": "amb_shop"
+  },
+  "level39": {
+    "spineName": "level33",
+    "isRemote": false,
+    "amb": null
+  },
+  "level40": {
+    "spineName": "level34",
+    "isRemote": false,
+    "amb": "amb_kitchen"
+  },
+  "level41": {
+    "spineName": "level35_anagrams",
+    "isRemote": false,
+    "amb": "amb_stepsShop"
+  },
+  "level42": {
+    "spineName": "level36",
+    "isRemote": false,
+    "amb": null
+  },
+  "level43": {
+    "spineName": "level134_identical_clock",
+    "isRemote": false,
+    "amb": null
+  },
+  "level44": {
+    "spineName": "level37",
+    "isRemote": false,
+    "amb": null
+  },
+  "level45": {
+    "spineName": "level38",
+    "isRemote": false,
+    "amb": null
+  },
+  "level46": {
+    "spineName": "level39_generator",
+    "isRemote": false,
+    "amb": null
+  },
+  "level47": {
+    "spineName": "level40",
+    "isRemote": false,
+    "amb": null
+  },
+  "level48": {
+    "spineName": "level41",
+    "isRemote": false,
+    "amb": null
+  },
+  "level49": {
+    "spineName": "level45_words",
+    "isRemote": false,
+    "amb": null
+  },
+  "level50": {
+    "spineName": "level42_shadows",
+    "isRemote": false,
+    "amb": null
+  },
+  "level51": {
+    "spineName": "level43",
+    "isRemote": false,
+    "amb": null
+  },
+  "level52": {
+    "spineName": "level44",
+    "isRemote": false,
+    "amb": null
+  },
+  "level53": {
+    "spineName": "level128_anagrams",
+    "isRemote": false,
+    "amb": null
+  },
+  "level54": {
+    "spineName": "level46",
+    "isRemote": false,
+    "amb": null
+  },
+  "level55": {
+    "spineName": "level135_identical_flowers",
+    "isRemote": false,
+    "amb": null
+  },
+  "level56": {
+    "spineName": "level47",
+    "isRemote": false,
+    "amb": null
+  },
+  "level57": {
+    "spineName": "level48",
+    "isRemote": false,
+    "amb": null
+  },
+  "level58": {
+    "spineName": "level49_generator",
+    "isRemote": false,
+    "amb": null
+  },
+  "level59": {
+    "spineName": "level50",
+    "isRemote": false,
+    "amb": null
+  },
+  "level60": {
+    "spineName": "level51",
+    "isRemote": false,
+    "amb": null
+  },
+  "level61": {
+    "spineName": "level129_words",
+    "isRemote": false,
+    "amb": null
+  },
+  "level62": {
+    "spineName": "level52_shadows",
+    "isRemote": false,
+    "amb": "amb_street"
+  },
+  "level63": {
+    "spineName": "level53",
+    "isRemote": false,
+    "amb": null
+  },
+  "level64": {
+    "spineName": "level54",
+    "isRemote": false,
+    "amb": null
+  },
+  "level65": {
+    "spineName": "level55_anagrams",
+    "isRemote": false,
+    "amb": null
+  },
+  "level66": {
+    "spineName": "level56",
+    "isRemote": false,
+    "amb": null
+  },
+  "level67": {
+    "spineName": "level136_identical_cookies",
+    "isRemote": false,
+    "amb": null
+  },
+  "level68": {
+    "spineName": "level57",
+    "isRemote": false,
+    "amb": null
+  },
+  "level69": {
+    "spineName": "level58",
+    "isRemote": false,
+    "amb": null
+  },
+  "level70": {
+    "spineName": "level59_generator",
+    "isRemote": false,
+    "amb": null
+  },
+  "level71": {
+    "spineName": "level60",
+    "isRemote": false,
+    "amb": null
+  },
+  "level72": {
+    "spineName": "level61",
+    "isRemote": false,
+    "amb": null
+  },
+  "level73": {
+    "spineName": "level65_words",
+    "isRemote": false,
+    "amb": null
+  },
+  "level74": {
+    "spineName": "level62_shadows",
+    "isRemote": false,
+    "amb": "amb_kitchen"
+  },
+  "level75": {
+    "spineName": "level63",
+    "isRemote": false,
+    "amb": null
+  },
+  "level76": {
+    "spineName": "level64",
+    "isRemote": false,
+    "amb": null
+  },
+  "level77": {
+    "spineName": "level130_anagrams",
+    "isRemote": false,
+    "amb": null
+  },
+  "level78": {
+    "spineName": "level66",
+    "isRemote": false,
+    "amb": null
+  },
+  "level79": {
+    "spineName": "level137_identical_cat",
+    "isRemote": false,
+    "amb": null
+  },
+  "level80": {
+    "spineName": "level67",
+    "isRemote": false,
+    "amb": null
+  },
+  "level81": {
+    "spineName": "level68",
+    "isRemote": false,
+    "amb": null
+  },
+  "level82": {
+    "spineName": "level69_generator",
+    "isRemote": true,
+    "amb": null
+  },
+  "level83": {
+    "spineName": "level70",
+    "isRemote": true,
+    "amb": null
+  },
+  "level84": {
+    "spineName": "level71",
+    "isRemote": true,
+    "amb": "amb_streetCafe"
+  },
+  "level85": {
+    "spineName": "level141_words",
+    "isRemote": true,
+    "amb": null
+  },
+  "level86": {
+    "spineName": "level72_shadows",
+    "isRemote": true,
+    "amb": "amb_workshop"
+  },
+  "level87": {
+    "spineName": "level73",
+    "isRemote": true,
+    "amb": "amb_streetCafe"
+  },
+  "level88": {
+    "spineName": "level74",
+    "isRemote": true,
+    "amb": null
+  },
+  "level89": {
+    "spineName": "level75_anagrams",
+    "isRemote": true,
+    "amb": null
+  },
+  "level90": {
+    "spineName": "level76",
+    "isRemote": true,
+    "amb": null
+  },
+  "level91": {
+    "spineName": "level138_identical_softtoy",
+    "isRemote": true,
+    "amb": null
+  },
+  "level92": {
+    "spineName": "level77",
+    "isRemote": true,
+    "amb": null
+  },
+  "level93": {
+    "spineName": "level78",
+    "isRemote": true,
+    "amb": null
+  },
+  "level94": {
+    "spineName": "level79_generator",
+    "isRemote": true,
+    "amb": null
+  },
+  "level95": {
+    "spineName": "level80",
+    "isRemote": true,
+    "amb": "amb_cafe"
+  },
+  "level96": {
+    "spineName": "level81",
+    "isRemote": true,
+    "amb": "amb_eatery"
+  },
+  "level97": {
+    "spineName": "level85_words",
+    "isRemote": true,
+    "amb": null
+  },
+  "level98": {
+    "spineName": "level82_shadows",
+    "isRemote": true,
+    "amb": "amb_workshop"
+  },
+  "level99": {
+    "spineName": "level83",
+    "isRemote": true,
+    "amb": null
+  },
+  "level100": {
+    "spineName": "level84",
+    "isRemote": true,
+    "amb": null
+  },
+  "level101": {
+    "spineName": "level142_anagrams",
+    "isRemote": true,
+    "amb": null
+  },
+  "level102": {
+    "spineName": "level86",
+    "isRemote": true,
+    "amb": null
+  },
+  "level103": {
+    "spineName": "level139_identical_butterfly",
+    "isRemote": true,
+    "amb": null
+  },
+  "level104": {
+    "spineName": "level87",
+    "isRemote": true,
+    "amb": null
+  },
+  "level105": {
+    "spineName": "level88",
+    "isRemote": true,
+    "amb": null
+  },
+  "level106": {
+    "spineName": "level89_generator",
+    "isRemote": true,
+    "amb": null
+  },
+  "level107": {
+    "spineName": "level90",
+    "isRemote": true,
+    "amb": null
+  },
+  "level108": {
+    "spineName": "level91",
+    "isRemote": true,
+    "amb": "amb_miniShop"
+  },
+  "level109": {
+    "spineName": "level143_words",
+    "isRemote": true,
+    "amb": null
+  },
+  "level110": {
+    "spineName": "level92_shadows",
+    "isRemote": true,
+    "amb": null
+  },
+  "level111": {
+    "spineName": "level93",
+    "isRemote": true,
+    "amb": "amb_eatery"
+  },
+  "level112": {
+    "spineName": "level94",
+    "isRemote": true,
+    "amb": "amb_nature"
+  },
+  "level113": {
+    "spineName": "level95_anagrams",
+    "isRemote": true,
+    "amb": "amb_stepsShop"
+  },
+  "level114": {
+    "spineName": "level96",
+    "isRemote": true,
+    "amb": "amb_city"
+  },
+  "level115": {
+    "spineName": "level140_identical_newspaper",
+    "isRemote": true,
+    "amb": null
+  },
+  "level116": {
+    "spineName": "level97",
+    "isRemote": true,
+    "amb": null
+  },
+  "level117": {
+    "spineName": "level98",
+    "isRemote": true,
+    "amb": null
+  },
+  "level118": {
+    "spineName": "level99_generator",
+    "isRemote": true,
+    "amb": null
+  },
+  "level119": {
+    "spineName": "level100",
+    "isRemote": true,
+    "amb": null
+  },
+  "level120": {
+    "spineName": "level101",
+    "isRemote": true,
+    "amb": null
+  },
+  "level121": {
+    "spineName": "level144_words",
+    "isRemote": true,
+    "amb": null
+  },
+  "level122": {
+    "spineName": "level102_shadows",
+    "isRemote": true,
+    "amb": null
+  },
+  "level123": {
+    "spineName": "level103",
+    "isRemote": true,
+    "amb": null
+  },
+  "level124": {
+    "spineName": "level104",
+    "isRemote": true,
+    "amb": null
+  }
+}
