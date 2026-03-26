@@ -1,10 +1,12 @@
+import {createBackgroundCard} from './scripts/components/backgroundCard.js'
+
 class GameTest {
   #levelsPath = './src/assets/levels/gameConfig/levels.json'
   #backgroundsPath = './src/assets/levels/backgrounds'
   #storyRU = {}
   #storyEN = {}
   
-  #wrapper = null
+  #wrapper = document.querySelector('.wrapper')
   #backgroundItems = []
   #currentPreviewIndex = -1
   #preview = null
@@ -13,6 +15,7 @@ class GameTest {
   #audio = null
   #audioNotFoundMessage = 'Аудио не найдено'
   #activePlayBtn = null
+  #imageObserver = null
   
   constructor() {
     this.init()
@@ -22,7 +25,7 @@ class GameTest {
     const levels = await this.#loadLevels()
     await this.#loadStories()
     
-    this.#createWrapper()
+    this.#createImageObserver()
     this.#renderBackgrounds(levels)
     this.#setEvents()
   }
@@ -36,12 +39,6 @@ class GameTest {
   #loadLevels = async () => {
     const res = await fetch(this.#levelsPath)
     return res.json()
-  }
-  
-  #createWrapper = () => {
-    this.#wrapper = document.createElement('div')
-    this.#wrapper.className = 'wrapper'
-    document.body.appendChild(this.#wrapper)
   }
   
   #renderBackgrounds = levels => {
@@ -59,29 +56,25 @@ class GameTest {
   }
   
   #createBackgroundItem = (levelIndex, spineName) => {
-    const background = document.createElement('div')
-    background.className = 'background'
-    
     const levelKey = `lv${levelIndex}`
+    const src = `${this.#backgroundsPath}/back_lv${levelIndex}.webp`
+    const title = `${levelIndex} - ${spineName}`
     
-    background.dataset.src = `${this.#backgroundsPath}/back_lv${levelIndex}.webp`
-    background.dataset.title = `${levelIndex} - ${spineName}`
-    background.dataset.levelKey = levelKey
+    const card = createBackgroundCard({src, title, levelKey})
     
-    const label = document.createElement('div')
-    label.className = 'background__label'
-    label.textContent = background.dataset.title
+    const template = document.createElement('template')
+    template.innerHTML = card.trim()
     
-    const img = document.createElement('img')
-    img.src = background.dataset.src
+    const background = template.content.firstElementChild
+    const img = background.querySelector('img')
     
-    background.append(label, img)
+    this.#imageObserver.observe(img)
     
     return background
   }
   
   #onBackgroundClick = event => {
-    const background = event.target.closest('.background')
+    const background = event.target.closest('.background-card')
     
     if (!background || !this.#wrapper.contains(background)) {
       return
@@ -322,9 +315,8 @@ class GameTest {
     
     return container
   }
+  
   // ---------- audio
-  
-  
   #playSpeech = async (playBtn, lang, section, speechId) => {
     if (!speechId) {
       alert(this.#audioNotFoundMessage)
@@ -396,6 +388,36 @@ class GameTest {
     
     playBtn.textContent = isPlaying ? '⏸️' : '▶️'
   }
+  
+  // lazy loading
+  #createImageObserver = () => {
+    this.#imageObserver = new IntersectionObserver(this.#onImageIntersect, {
+      root: null,
+      rootMargin: '300px 0px',
+      threshold: 0.01
+    })
+  }
+  
+  #onImageIntersect = entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return
+      }
+      
+      const img = entry.target
+      
+      if (!img.dataset.src) {
+        this.#imageObserver.unobserve(img)
+        return
+      }
+      
+      img.src = img.dataset.src
+      img.removeAttribute('data-src')
+      
+      this.#imageObserver.unobserve(img)
+    })
+  }
+
 }
 
 new GameTest()
