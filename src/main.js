@@ -12,6 +12,7 @@ class GameTest {
   #speechBasePath = './src/assets/speech'
   #audio = null
   #audioNotFoundMessage = 'Аудио не найдено'
+  #activePlayBtn = null
   
   constructor() {
     this.init()
@@ -135,12 +136,15 @@ class GameTest {
     }
   }
   
+  // --------- preview
   #openPreview = () => {
     const currentBackground = this.#backgroundItems[this.#currentPreviewIndex]
     
     if (!currentBackground) {
       return
     }
+    
+    this.#stopSpeech()
     
     const currentSrc = currentBackground.dataset.src
     const currentTitle = currentBackground.dataset.title
@@ -181,6 +185,23 @@ class GameTest {
     story.append(ruBlock, enBlock)
   }
   
+  #onPreviewContentClick = event => {
+    const playBtn = event.target.closest('.story-line__play')
+    
+    if (!playBtn) {
+      return
+    }
+    
+    event.stopPropagation()
+    
+    this.#playSpeech(
+      playBtn,
+      playBtn.dataset.lang,
+      playBtn.dataset.section,
+      playBtn.dataset.speechId
+    )
+  }
+  
   #closePreview = () => {
     if (!this.#preview) {
       return
@@ -195,7 +216,7 @@ class GameTest {
     this.#preview = null
     this.#currentPreviewIndex = -1
   }
-
+  
   #onPreviewWheel = event => {
     event.preventDefault()
     
@@ -302,25 +323,16 @@ class GameTest {
     return container
   }
   // ---------- audio
-  #onPreviewContentClick = event => {
-    const playBtn = event.target.closest('.story-line__play')
-    
-    if (!playBtn) {
+  
+  
+  #playSpeech = async (playBtn, lang, section, speechId) => {
+    if (!speechId) {
+      alert(this.#audioNotFoundMessage)
       return
     }
     
-    event.stopPropagation()
-    
-    this.#playSpeech(
-      playBtn.dataset.lang,
-      playBtn.dataset.section,
-      playBtn.dataset.speechId
-    )
-  }
-  
-  #playSpeech = async (lang, section, speechId) => {
-    if (!speechId) {
-      alert(this.#audioNotFoundMessage)
+    if (this.#audio && this.#activePlayBtn === playBtn) {
+      this.#stopSpeech()
       return
     }
     
@@ -328,7 +340,10 @@ class GameTest {
     const audio = new Audio(src)
     
     this.#stopSpeech()
+    
     this.#audio = audio
+    this.#activePlayBtn = playBtn
+    this.#setPlayBtnState(playBtn, true)
     
     let isHandled = false
     
@@ -338,16 +353,12 @@ class GameTest {
       }
       
       isHandled = true
-      this.#audio = null
+      this.#stopSpeech()
       alert(this.#audioNotFoundMessage)
     }
     
     audio.addEventListener('error', handleAudioError, { once: true })
-    audio.addEventListener('ended', () => {
-      if (this.#audio === audio) {
-        this.#audio = null
-      }
-    }, { once: true })
+    audio.addEventListener('ended', this.#onAudioEnded, { once: true })
     
     try {
       await audio.play()
@@ -361,15 +372,30 @@ class GameTest {
   }
   
   #stopSpeech = () => {
-    if (!this.#audio) {
+    if (this.#audio) {
+      this.#audio.pause()
+      this.#audio.currentTime = 0
+      this.#audio = null
+    }
+    
+    if (this.#activePlayBtn) {
+      this.#setPlayBtnState(this.#activePlayBtn, false)
+      this.#activePlayBtn = null
+    }
+  }
+  
+
+  #onAudioEnded = () => {
+    this.#stopSpeech()
+  }
+  
+  #setPlayBtnState = (playBtn, isPlaying) => {
+    if (!playBtn) {
       return
     }
     
-    this.#audio.pause()
-    this.#audio.currentTime = 0
-    this.#audio = null
+    playBtn.textContent = isPlaying ? '⏸️' : '▶️'
   }
-  
 }
 
 new GameTest()

@@ -120,12 +120,13 @@ canvas {
 
 /*story-text*/
 .preview__story {
+  position: absolute;
   width: 100%;
   max-width: 900px;
   margin-top: 20px;
   color: #fff;
   padding: 10px;
-  background: rgb(63 63 89 / 60%);
+  background: rgb(0 0 0 / 50%);
 }
 
 .story-block {
@@ -162,11 +163,9 @@ canvas {
 .story-line__play {
   width: 28px;
   height: 28px;
-
-  display: flex;               /* ключ */
-  justify-content: center;     /* центр по горизонтали */
-  align-items: center;         /* центр по вертикали */
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
