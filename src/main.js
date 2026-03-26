@@ -9,6 +9,10 @@ class GameTest {
   #currentPreviewIndex = -1
   #preview = null
   
+  #speechBasePath = './src/assets/speech'
+  #audio = null
+  #audioNotFoundMessage = 'Аудио не найдено'
+  
   constructor() {
     this.init()
   }
@@ -151,12 +155,14 @@ class GameTest {
       
       const img = document.createElement('img')
       img.className = 'preview__image'
+      img.alt = 'preview'
       
       const story = document.createElement('div')
       story.className = 'preview__story'
       
       this.#preview.append(title, img, story)
       this.#preview.addEventListener('wheel', this.#onPreviewWheel, { passive: false })
+      this.#preview.addEventListener('click', this.#onPreviewContentClick)
       
       document.body.appendChild(this.#preview)
     }
@@ -167,11 +173,10 @@ class GameTest {
     
     title.textContent = currentTitle
     img.src = currentSrc
-    
     story.innerHTML = ''
     
-    const ruBlock = this.#renderStoryBlock('RU', this.#storyRU[levelKey])
-    const enBlock = this.#renderStoryBlock('EN', this.#storyEN[levelKey])
+    const ruBlock = this.#renderStoryBlock('ru', 'RU', this.#storyRU[levelKey])
+    const enBlock = this.#renderStoryBlock('en', 'EN', this.#storyEN[levelKey])
     
     story.append(ruBlock, enBlock)
   }
@@ -181,12 +186,16 @@ class GameTest {
       return
     }
     
+    this.#stopSpeech()
+    
     this.#preview.removeEventListener('wheel', this.#onPreviewWheel)
+    this.#preview.removeEventListener('click', this.#onPreviewContentClick)
     this.#preview.remove()
+    
     this.#preview = null
     this.#currentPreviewIndex = -1
   }
-  
+
   #onPreviewWheel = event => {
     event.preventDefault()
     
@@ -239,7 +248,7 @@ class GameTest {
     this.#storyEN = await enRes.json()
   }
   
-  #renderStoryBlock = (title, data) => {
+  #renderStoryBlock = (lang, title, data) => {
     const container = document.createElement('div')
     container.className = 'story-block'
     
@@ -253,30 +262,114 @@ class GameTest {
       return container
     }
     
-    ;['intro', 'outro'].forEach(type => {
-      const section = data[type]
+    ;['intro', 'outro'].forEach(sectionType => {
+      const section = data[sectionType]
       
-      if (!section || !section.text) {
+      if (!section || !Array.isArray(section.text) || !section.text.length) {
         return
       }
       
       const sectionTitle = document.createElement('div')
       sectionTitle.className = 'story-block__section'
-      sectionTitle.textContent = type
+      sectionTitle.textContent = `${sectionType}:`
       
       container.appendChild(sectionTitle)
       
-      section.text.forEach((text, i) => {
-        const p = document.createElement('div')
-        p.className = 'story-block__text'
-        p.textContent = `${i + 1}) ${text.replace(/"/g, '')}`
+      section.text.forEach((text, index) => {
+        const speechId = section.speech?.[index] || ''
         
-        container.appendChild(p)
+        const row = document.createElement('div')
+        row.className = 'story-line'
+        
+        const playBtn = document.createElement('button')
+        playBtn.className = 'story-line__play'
+        playBtn.type = 'button'
+        playBtn.textContent = '▶️'
+        playBtn.dataset.lang = lang
+        playBtn.dataset.section = sectionType
+        playBtn.dataset.speechId = speechId
+        playBtn.setAttribute('aria-label', `play ${speechId || 'audio'}`)
+        
+        const textEl = document.createElement('div')
+        textEl.className = 'story-line__text'
+        textEl.textContent = `${index + 1}) ${text.replace(/"/g, '')}`
+        
+        row.append(playBtn, textEl)
+        container.appendChild(row)
       })
     })
     
     return container
   }
+  // ---------- audio
+  #onPreviewContentClick = event => {
+    const playBtn = event.target.closest('.story-line__play')
+    
+    if (!playBtn) {
+      return
+    }
+    
+    event.stopPropagation()
+    
+    this.#playSpeech(
+      playBtn.dataset.lang,
+      playBtn.dataset.section,
+      playBtn.dataset.speechId
+    )
+  }
+  
+  #playSpeech = async (lang, section, speechId) => {
+    if (!speechId) {
+      alert(this.#audioNotFoundMessage)
+      return
+    }
+    
+    const src = this.#getSpeechSrc(lang, section, speechId)
+    const audio = new Audio(src)
+    
+    this.#stopSpeech()
+    this.#audio = audio
+    
+    let isHandled = false
+    
+    const handleAudioError = () => {
+      if (isHandled) {
+        return
+      }
+      
+      isHandled = true
+      this.#audio = null
+      alert(this.#audioNotFoundMessage)
+    }
+    
+    audio.addEventListener('error', handleAudioError, { once: true })
+    audio.addEventListener('ended', () => {
+      if (this.#audio === audio) {
+        this.#audio = null
+      }
+    }, { once: true })
+    
+    try {
+      await audio.play()
+    } catch {
+      handleAudioError()
+    }
+  }
+  
+  #getSpeechSrc = (lang, section, speechId) => {
+    return `${this.#speechBasePath}/${lang}/${section}/${speechId}.mp3`
+  }
+  
+  #stopSpeech = () => {
+    if (!this.#audio) {
+      return
+    }
+    
+    this.#audio.pause()
+    this.#audio.currentTime = 0
+    this.#audio = null
+  }
+  
 }
 
 new GameTest()

@@ -62,7 +62,7 @@
 }
 
 .background:hover {
-  border-color: #fff;
+  outline: 4px solid lightgray;
 }
 
 .background img {
@@ -117,6 +117,7 @@ canvas {
   outline-offset: -4px;
 }
 
+
 /*story-text*/
 .preview__story {
   width: 100%;
@@ -147,4 +148,32 @@ canvas {
   font-size: 16px;
   margin-left: 10px;
   margin-top: 4px;
+}
+
+
+/*audio*/
+.story-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.story-line__play {
+  width: 28px;
+  height: 28px;
+
+  display: flex;               /* ключ */
+  justify-content: center;     /* центр по горизонтали */
+  align-items: center;         /* центр по вертикали */
+
+  cursor: pointer;
+}
+
+.story-line__play:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.story-line__text {
+  flex: 1 1 auto;
 }
