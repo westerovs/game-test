@@ -112,6 +112,9 @@ canvas {
 /*preview*/
 .preview {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   inset: 0;
   padding: 20px;
   background: rgba(0, 0, 0, 0.9);

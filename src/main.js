@@ -1,5 +1,6 @@
 import {createBackgroundCard} from './scripts/components/backgroundCardTemplate.js'
 import {previewTemplate} from './scripts/components/previewTemplate.js'
+import {storyBlockTemplate} from './scripts/components/storyBlockTemplate.js'
 
 class GameTest {
   #levelsPath = './src/assets/levels/gameConfig/levels.json'
@@ -261,57 +262,12 @@ class GameTest {
   }
   
   #renderStoryBlock = (lang, title, data) => {
-    const container = document.createElement('div')
-    container.className = 'story-block'
+    const html = storyBlockTemplate({ lang, title, data })
     
-    const titleEl = document.createElement('div')
-    titleEl.className = 'story-block__title'
-    titleEl.textContent = title
+    const template = document.createElement('template')
+    template.innerHTML = html.trim()
     
-    container.appendChild(titleEl)
-    
-    if (!data) {
-      return container
-    }
-    
-    ;['intro', 'outro'].forEach(sectionType => {
-      const section = data[sectionType]
-      
-      if (!section || !Array.isArray(section.text) || !section.text.length) {
-        return
-      }
-      
-      const sectionTitle = document.createElement('div')
-      sectionTitle.className = 'story-block__section'
-      sectionTitle.textContent = `${sectionType}:`
-      
-      container.appendChild(sectionTitle)
-      
-      section.text.forEach((text, index) => {
-        const speechId = section.speech?.[index] || ''
-        
-        const row = document.createElement('div')
-        row.className = 'story-line'
-        
-        const playBtn = document.createElement('button')
-        playBtn.className = 'story-line__play'
-        playBtn.type = 'button'
-        playBtn.textContent = '▶️'
-        playBtn.dataset.lang = lang
-        playBtn.dataset.section = sectionType
-        playBtn.dataset.speechId = speechId
-        playBtn.setAttribute('aria-label', `play ${speechId || 'audio'}`)
-        
-        const textEl = document.createElement('div')
-        textEl.className = 'story-line__text'
-        textEl.textContent = `${index + 1}) ${text.replace(/"/g, '')}`
-        
-        row.append(playBtn, textEl)
-        container.appendChild(row)
-      })
-    })
-    
-    return container
+    return template.content.firstElementChild
   }
   
   // ---------- audio
