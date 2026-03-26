@@ -10,6 +10,9 @@ class GameTest {
   
   #wrapper
   #cards
+  #cardsList
+  #modeButtons = []
+  #currentMode = 'showcase'
   #backgroundItems = []
   #currentPreviewIndex = -1
   #preview = null
@@ -23,6 +26,8 @@ class GameTest {
   constructor() {
     this.#wrapper = document.querySelector('.wrapper')
     this.#cards = this.#wrapper.querySelector('.cards')
+    this.#cardsList = this.#wrapper.querySelector('.cards-list')
+    this.#modeButtons = [...this.#wrapper.querySelectorAll('.mode-button')]
     
     this.init()
   }
@@ -33,11 +38,14 @@ class GameTest {
     
     this.#createImageObserver()
     this.#renderBackgroundCards(levels)
+    this.#cardsList.classList.add('visually-hidden')
     this.#setEvents()
   }
   
   #setEvents = () => {
     this.#wrapper.addEventListener('click', this.#onBackgroundClick)
+    this.#wrapper.addEventListener('click', this.#onModeButtonClick)
+    this.#cardsList.addEventListener('click', this.#onPreviewContentClick)
     document.addEventListener('click', this.#onPreviewClick)
     document.addEventListener('keydown', this.#onDocumentKeydown)
   }
@@ -80,6 +88,10 @@ class GameTest {
   }
   
   #onBackgroundClick = event => {
+    if (this.#currentMode !== 'showcase') {
+      return
+    }
+    
     const background = event.target.closest('.background-card')
     
     if (!background || !this.#wrapper.contains(background)) {
@@ -134,6 +146,7 @@ class GameTest {
       this.#showPrevPreview()
     }
   }
+  
   
   // --------- preview
   #openPreview = () => {
@@ -250,6 +263,7 @@ class GameTest {
     this.#openPreview()
   }
   
+  
   // ---------- story texts
   #loadStories = async () => {
     const [ruRes, enRes] = await Promise.all([
@@ -269,6 +283,7 @@ class GameTest {
     
     return template.content.firstElementChild
   }
+  
   
   // ---------- audio
   #playSpeech = async (playBtn, lang, section, speechId) => {
@@ -343,7 +358,8 @@ class GameTest {
     playBtn.textContent = isPlaying ? '⏸️' : '▶️'
   }
   
-  // lazy loading
+  
+  // ---------- lazy loading
   #createImageObserver = () => {
     this.#imageObserver = new IntersectionObserver(this.#onImageIntersect, {
       root: null,
@@ -369,6 +385,88 @@ class GameTest {
       img.removeAttribute('data-src')
       
       this.#imageObserver.unobserve(img)
+    })
+  }
+  
+  
+  // ---------- mode buttons
+  #onModeButtonClick = event => {
+    const modeButton = event.target.closest('.mode-button')
+    
+    if (!modeButton || !this.#wrapper.contains(modeButton)) {
+      return
+    }
+    
+    const { mode } = modeButton.dataset
+    
+    if (!mode || mode === this.#currentMode) {
+      return
+    }
+    
+    this.#setMode(mode)
+  }
+  
+  #setMode = mode => {
+    if (mode !== 'showcase' && mode !== 'list') {
+      return
+    }
+    
+    this.#stopSpeech()
+    this.#closePreview()
+    
+    this.#currentMode = mode
+    this.#updateModeButtons()
+    
+    if (mode === 'showcase') {
+      this.#cards.classList.remove('visually-hidden')
+      this.#cardsList.classList.add('visually-hidden')
+      return
+    }
+    
+    this.#cards.classList.add('visually-hidden')
+    
+    if (!this.#cardsList.childElementCount) {
+      this.#renderCardsList()
+    }
+    
+    this.#cardsList.classList.remove('visually-hidden')
+  }
+  
+  #updateModeButtons = () => {
+    this.#modeButtons.forEach(button => {
+      button.classList.toggle('btn-is-active', button.dataset.mode === this.#currentMode)
+    })
+  }
+  
+  #createCardsListItem = background => {
+    const title = background.dataset.title
+    const levelKey = background.dataset.levelKey
+    
+    const item = document.createElement('section')
+    item.className = 'cards-list__item'
+    
+    const titleEl = document.createElement('p')
+    titleEl.className = 'cards-list__title'
+    titleEl.textContent = title
+    
+    const content = document.createElement('div')
+    content.className = 'cards-list__content'
+    
+    const ruBlock = this.#renderStoryBlock('ru', 'RU', this.#storyRU[levelKey])
+    const enBlock = this.#renderStoryBlock('en', 'EN', this.#storyEN[levelKey])
+    
+    content.append(ruBlock, enBlock)
+    item.append(titleEl, content)
+    
+    return item
+  }
+  
+  #renderCardsList = () => {
+    this.#cardsList.innerHTML = ''
+    
+    this.#backgroundItems.forEach(background => {
+      const item = this.#createCardsListItem(background)
+      this.#cardsList.appendChild(item)
     })
   }
 

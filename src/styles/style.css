@@ -48,10 +48,14 @@ canvas {
 
 /*buttons*/
 .buttons-row {
-  padding: 10px 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: #2c7580;
+  padding: 10px;
   display: flex;
   justify-content: center;
   gap: 0 10px;
+  z-index: 10;
 }
 
 .mode-button {
@@ -70,7 +74,7 @@ canvas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  padding: 10px;
+  padding: 0 10px 10px;
 }
 
 @media (max-width: 900px) {
@@ -160,7 +164,7 @@ canvas {
 }
 
 .story-block__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -181,7 +185,7 @@ canvas {
 /*audio*/
 .story-line {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   margin-top: 6px;
 }
@@ -200,5 +204,57 @@ canvas {
 }
 
 .story-line__text {
-  flex: 1 1 auto;
+}
+
+/*mode-buttons*/
+.story-list-view {
+  width: min(1200px, calc(100% - 40px));
+  max-height: calc(100vh - 120px);
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
+  background: rgb(0 0 0 / 70%);
+  border: 2px solid gray;
+}
+
+.story-list-item + .story-list-item {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.story-list-item__title {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.story-list-item__content {
+  color: #fff;
+}
+
+
+/*mode list*/
+.cards-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-list .cards-list__item {
+  margin-bottom: 10px;
+  border: 2px solid black;
+  background: rgb(43 5 5 / 50%);
+  padding: 10px;
+}
+
+.cards-list__title {
+  text-align: center;
+}
+
+.cards-list__content .story-block:not(:last-child) {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.3);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
