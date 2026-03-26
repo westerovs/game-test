@@ -1,6 +1,9 @@
 class GameTest {
   #levelsPath = './src/assets/levels/gameConfig/levels.json'
   #backgroundsPath = './src/assets/levels/backgrounds'
+  #storyRU = {}
+  #storyEN = {}
+  
   #wrapper = null
   #backgroundItems = []
   #currentPreviewIndex = -1
@@ -12,6 +15,8 @@ class GameTest {
   
   init = async () => {
     const levels = await this.#loadLevels()
+    await this.#loadStories()
+    
     this.#createWrapper()
     this.#renderBackgrounds(levels)
     this.#setEvents()
@@ -51,8 +56,12 @@ class GameTest {
   #createBackgroundItem = (levelIndex, spineName) => {
     const background = document.createElement('div')
     background.className = 'background'
+    
+    const levelKey = `lv${levelIndex}`
+    
     background.dataset.src = `${this.#backgroundsPath}/back_lv${levelIndex}.webp`
     background.dataset.title = `${levelIndex} - ${spineName}`
+    background.dataset.levelKey = levelKey
     
     const label = document.createElement('div')
     label.className = 'background__label'
@@ -60,7 +69,6 @@ class GameTest {
     
     const img = document.createElement('img')
     img.src = background.dataset.src
-    img.alt = `back_lv${levelIndex}`
     
     background.append(label, img)
     
@@ -132,6 +140,7 @@ class GameTest {
     
     const currentSrc = currentBackground.dataset.src
     const currentTitle = currentBackground.dataset.title
+    const levelKey = currentBackground.dataset.levelKey
     
     if (!this.#preview) {
       this.#preview = document.createElement('div')
@@ -142,9 +151,11 @@ class GameTest {
       
       const img = document.createElement('img')
       img.className = 'preview__image'
-      img.alt = 'preview'
       
-      this.#preview.append(title, img)
+      const story = document.createElement('div')
+      story.className = 'preview__story'
+      
+      this.#preview.append(title, img, story)
       this.#preview.addEventListener('wheel', this.#onPreviewWheel, { passive: false })
       
       document.body.appendChild(this.#preview)
@@ -152,9 +163,17 @@ class GameTest {
     
     const title = this.#preview.querySelector('.preview__title')
     const img = this.#preview.querySelector('.preview__image')
+    const story = this.#preview.querySelector('.preview__story')
     
     title.textContent = currentTitle
     img.src = currentSrc
+    
+    story.innerHTML = ''
+    
+    const ruBlock = this.#renderStoryBlock('RU', this.#storyRU[levelKey])
+    const enBlock = this.#renderStoryBlock('EN', this.#storyEN[levelKey])
+    
+    story.append(ruBlock, enBlock)
   }
   
   #closePreview = () => {
@@ -207,6 +226,56 @@ class GameTest {
     }
     
     this.#openPreview()
+  }
+  
+  // ---------- story texts
+  #loadStories = async () => {
+    const [ruRes, enRes] = await Promise.all([
+      fetch('./src/assets/levels/gameConfig/storyTexts_ru.json'),
+      fetch('./src/assets/levels/gameConfig/storyTexts_en.json')
+    ])
+    
+    this.#storyRU = await ruRes.json()
+    this.#storyEN = await enRes.json()
+  }
+  
+  #renderStoryBlock = (title, data) => {
+    const container = document.createElement('div')
+    container.className = 'story-block'
+    
+    const titleEl = document.createElement('div')
+    titleEl.className = 'story-block__title'
+    titleEl.textContent = title
+    
+    container.appendChild(titleEl)
+    
+    if (!data) {
+      return container
+    }
+    
+    ;['intro', 'outro'].forEach(type => {
+      const section = data[type]
+      
+      if (!section || !section.text) {
+        return
+      }
+      
+      const sectionTitle = document.createElement('div')
+      sectionTitle.className = 'story-block__section'
+      sectionTitle.textContent = type
+      
+      container.appendChild(sectionTitle)
+      
+      section.text.forEach((text, i) => {
+        const p = document.createElement('div')
+        p.className = 'story-block__text'
+        p.textContent = `${i + 1}) ${text.replace(/"/g, '')}`
+        
+        container.appendChild(p)
+      })
+    })
+    
+    return container
   }
 }
 
