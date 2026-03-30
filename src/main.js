@@ -2,21 +2,33 @@ import {createBackgroundCard} from './scripts/components/backgroundCardTemplate.
 import {previewTemplate} from './scripts/components/previewTemplate.js'
 import {storyBlockTemplate} from './scripts/components/storyBlockTemplate.js'
 
-const FOLDERS = {
-  detective: 'detective',
-  hotel: 'hotel',
+const GAME_CONFIG = {
+  detective: {
+    folder: 'detective',
+    languages: [
+      {code: 'ru', title: 'RU'},
+      {code: 'en', title: 'EN'}
+    ]
+  },
+  hotel: {
+    folder: 'hotel',
+    languages: [
+      {code: 'ru', title: 'RU'},
+      {code: 'en', title: 'EN'},
+      {code: 'de', title: 'DE'}
+    ]
+  }
 }
 
-const GAME_FOLDER = FOLDERS.hotel
+const GAME_FOLDER = GAME_CONFIG.detective.folder
 
 
 // todo вынести крупные блоки из лапшекода
 class GameTest {
   #levelsPath = `./src/games/${GAME_FOLDER}/assets/gameConfig/levels.json`
   #backgroundsPath = `./src/games/${GAME_FOLDER}/assets/levels/backgrounds`
-  #storyRU = {}
-  #storyEN = {}
-  #storyDE = {}
+  #stories = {}
+  #languages = GAME_CONFIG[GAME_FOLDER].languages
   #unavailableSpeech = new Set()
   
   #wrapper
@@ -68,7 +80,7 @@ class GameTest {
   
   #renderBackgroundCards = levels => {
     this.#backgroundItems = []
-
+    
     Object.keys(levels).forEach(levelKey => {
       const levelIndex = levelKey.replace('level', '')
       const levelData = levels[levelKey]
@@ -181,7 +193,7 @@ class GameTest {
       
       this.#preview = template.content.firstElementChild
       
-      this.#preview.addEventListener('wheel', this.#onPreviewWheel, { passive: false })
+      this.#preview.addEventListener('wheel', this.#onPreviewWheel, {passive: false})
       this.#preview.addEventListener('click', this.#onPreviewContentClick)
       
       document.body.appendChild(this.#preview)
@@ -195,11 +207,11 @@ class GameTest {
     img.src = currentSrc
     story.innerHTML = ''
     
-    const ruBlock = this.#renderStoryBlock('ru', 'RU', this.#storyRU[levelKey])
-    const enBlock = this.#renderStoryBlock('en', 'EN', this.#storyEN[levelKey])
-    const deBlock = this.#renderStoryBlock('de', 'DE', this.#storyDE[levelKey])
+    const blocks = this.#languages.map(({code, title}) => {
+      return this.#renderStoryBlock(code, title, this.#stories[code]?.[levelKey])
+    })
     
-    story.append(ruBlock, enBlock, deBlock)
+    story.append(...blocks)
   }
   
   #onPreviewContentClick = event => {
@@ -278,15 +290,19 @@ class GameTest {
   
   // ---------- story texts
   #loadStories = async () => {
-    const [ruRes, enRes, deRes] = await Promise.all([
-      fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_ru.json`),
-      fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_en.json`),
-      fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_de.json`),
-    ])
+    const entries = await Promise.all(
+      this.#languages.map(async ({code}) => {
+        const res = await fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_${code}.json`)
+        
+        if (!res.ok) {
+          return [code, {}] // нет языка - просто пусто
+        }
+        
+        return [code, await res.json()]
+      })
+    )
     
-    this.#storyRU = await ruRes.json()
-    this.#storyEN = await enRes.json()
-    this.#storyDE = await deRes.json()
+    this.#stories = Object.fromEntries(entries)
   }
   
   #renderStoryBlock = (lang, title, data) => {
@@ -335,8 +351,8 @@ class GameTest {
       this.#replacePlayBtnWithNoAudio(playBtn)
     }
     
-    audio.addEventListener('error', handleAudioError, { once: true })
-    audio.addEventListener('ended', this.#onAudioEnded, { once: true })
+    audio.addEventListener('error', handleAudioError, {once: true})
+    audio.addEventListener('ended', this.#onAudioEnded, {once: true})
     
     try {
       await audio.play()
@@ -361,7 +377,7 @@ class GameTest {
       this.#activePlayBtn = null
     }
   }
-
+  
   #onAudioEnded = () => {
     this.#stopSpeech()
   }
@@ -401,7 +417,7 @@ class GameTest {
             addedKeys.add(key)
             
             checks.push(
-              fetch(this.#getSpeechSrc(lang, section, speechId), { method: 'HEAD' })
+              fetch(this.#getSpeechSrc(lang, section, speechId), {method: 'HEAD'})
                 .then(res => {
                   if (!res.ok) {
                     this.#unavailableSpeech.add(key)
@@ -416,9 +432,9 @@ class GameTest {
       })
     }
     
-    appendChecks('ru', this.#storyRU)
-    appendChecks('en', this.#storyEN)
-    appendChecks('de', this.#storyDE)
+    this.#languages.forEach(({code}) => {
+      appendChecks(code, this.#stories[code] || {})
+    })
     
     await Promise.all(checks)
   }
@@ -512,7 +528,7 @@ class GameTest {
       return
     }
     
-    const { mode } = modeButton.dataset
+    const {mode} = modeButton.dataset
     
     if (!mode || mode === this.#currentMode) {
       return
@@ -567,11 +583,11 @@ class GameTest {
     const content = document.createElement('div')
     content.className = 'cards-list__content'
     
-    const ruBlock = this.#renderStoryBlock('ru', 'RU', this.#storyRU[levelKey])
-    const enBlock = this.#renderStoryBlock('en', 'EN', this.#storyEN[levelKey])
-    const deBlock = this.#renderStoryBlock('de', 'DE', this.#storyDE[levelKey])
+    const blocks = this.#languages.map(({code, title}) => {
+      return this.#renderStoryBlock(code, title, this.#stories[code]?.[levelKey])
+    })
     
-    content.append(ruBlock, enBlock, deBlock)
+    content.append(...blocks)
     item.append(titleEl, content)
     
     return item
@@ -585,7 +601,7 @@ class GameTest {
       this.#cardsList.appendChild(item)
     })
   }
-
+  
 }
 
 new GameTest()
