@@ -17,8 +17,10 @@ const GAME_CONFIG = {
 }
 
 const DEFAULT_GAME_KEY = GAME_CONFIG.hotel.folder
+const DEFAULT_VIEW_MODE = 'list'
 
 export {
   GAME_CONFIG,
   DEFAULT_GAME_KEY,
+  DEFAULT_VIEW_MODE,
 }

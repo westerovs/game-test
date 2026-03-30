@@ -134,10 +134,12 @@
 }
 
 .preview__title {
-    position: absolute;
+    position: fixed;
+    top: 25px;
+    right: 60px;
     padding: 10px;
     color: white;
-    background: rgba(24, 24, 24, 0.3);
+    background: rgba(24, 24, 24, 0.7);
     font-size: 28px;
     font-weight: bold;
     text-align: center;

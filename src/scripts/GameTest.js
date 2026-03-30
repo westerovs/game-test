@@ -1,7 +1,7 @@
 import {createBackgroundCard} from './components/backgroundCardTemplate.js'
 import {previewTemplate} from './components/previewTemplate.js'
 import {storyBlockTemplate} from './components/storyBlockTemplate.js'
-import {GAME_CONFIG} from './config.js'
+import {DEFAULT_VIEW_MODE, GAME_CONFIG} from './config.js'
 
 export default class GameTest {
   #gameFolder
@@ -64,11 +64,8 @@ export default class GameTest {
     this.#createImageObserver()
     this.#renderBackgroundCards(levels)
     
-    this.#cards.classList.remove('visually-hidden')
-    this.#cardsList.classList.add('visually-hidden')
-    
     this.#setEvents(true)
-    this.#updateModeButtons()
+    this.#setMode(DEFAULT_VIEW_MODE)
   }
   
   destroy = () => {
