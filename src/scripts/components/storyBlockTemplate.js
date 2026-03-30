@@ -44,7 +44,7 @@ export const storyBlockTemplate = ({ lang, title, data }) => {
       }).join('')
       
       return `
-        <div class="story-block__section">${sectionType}:</div>
+        <p class="story-block__section">${sectionType}:</p>
         ${rows}
       `
     })

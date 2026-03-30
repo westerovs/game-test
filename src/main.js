@@ -2,12 +2,21 @@ import {createBackgroundCard} from './scripts/components/backgroundCardTemplate.
 import {previewTemplate} from './scripts/components/previewTemplate.js'
 import {storyBlockTemplate} from './scripts/components/storyBlockTemplate.js'
 
+const FOLDERS = {
+  detective: 'detective',
+  hotel: 'hotel',
+}
+
+const GAME_FOLDER = FOLDERS.hotel
+
+
 // todo вынести крупные блоки из лапшекода
 class GameTest {
-  #levelsPath = './src/assets/levels/gameConfig/levels.json'
-  #backgroundsPath = './src/assets/levels/backgrounds'
+  #levelsPath = `./src/games/${GAME_FOLDER}/assets/gameConfig/levels.json`
+  #backgroundsPath = `./src/games/${GAME_FOLDER}/assets/levels/backgrounds`
   #storyRU = {}
   #storyEN = {}
+  #storyDE = {}
   #unavailableSpeech = new Set()
   
   #wrapper
@@ -19,9 +28,8 @@ class GameTest {
   #currentPreviewIndex = -1
   #preview = null
   
-  #speechBasePath = './src/assets/speech'
+  #speechBasePath = `./src/games/${GAME_FOLDER}/assets/speech`
   #audio = null
-  #audioNotFoundMessage = 'Аудио не найдено'
   #activePlayBtn = null
   #imageObserver = null
   
@@ -189,8 +197,9 @@ class GameTest {
     
     const ruBlock = this.#renderStoryBlock('ru', 'RU', this.#storyRU[levelKey])
     const enBlock = this.#renderStoryBlock('en', 'EN', this.#storyEN[levelKey])
+    const deBlock = this.#renderStoryBlock('de', 'DE', this.#storyDE[levelKey])
     
-    story.append(ruBlock, enBlock)
+    story.append(ruBlock, enBlock, deBlock)
   }
   
   #onPreviewContentClick = event => {
@@ -269,13 +278,15 @@ class GameTest {
   
   // ---------- story texts
   #loadStories = async () => {
-    const [ruRes, enRes] = await Promise.all([
-      fetch('./src/assets/levels/gameConfig/storyTexts_ru.json'),
-      fetch('./src/assets/levels/gameConfig/storyTexts_en.json')
+    const [ruRes, enRes, deRes] = await Promise.all([
+      fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_ru.json`),
+      fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_en.json`),
+      fetch(`./src/games/${GAME_FOLDER}/assets/gameConfig/storyTexts_de.json`),
     ])
     
     this.#storyRU = await ruRes.json()
     this.#storyEN = await enRes.json()
+    this.#storyDE = await deRes.json()
   }
   
   #renderStoryBlock = (lang, title, data) => {
@@ -407,6 +418,7 @@ class GameTest {
     
     appendChecks('ru', this.#storyRU)
     appendChecks('en', this.#storyEN)
+    appendChecks('de', this.#storyDE)
     
     await Promise.all(checks)
   }
@@ -557,8 +569,9 @@ class GameTest {
     
     const ruBlock = this.#renderStoryBlock('ru', 'RU', this.#storyRU[levelKey])
     const enBlock = this.#renderStoryBlock('en', 'EN', this.#storyEN[levelKey])
+    const deBlock = this.#renderStoryBlock('de', 'DE', this.#storyDE[levelKey])
     
-    content.append(ruBlock, enBlock)
+    content.append(ruBlock, enBlock, deBlock)
     item.append(titleEl, content)
     
     return item

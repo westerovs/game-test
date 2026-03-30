@@ -1,0 +1,252 @@
+{
+    "level0": {
+        "spineName": "level0",
+        "isRemote": false,
+        "amb": "amb_city"
+    },
+    "level1": {
+        "spineName": "level1",
+        "isRemote": false,
+        "amb": "amb_clock"
+    },
+    "level2": {
+        "spineName": "level2_shadows",
+        "isRemote": false,
+        "amb": "amb_radio"
+    },
+    "level3": {
+        "spineName": "level3",
+        "isRemote": false,
+        "amb": null
+    },
+    "level4": {
+        "spineName": "level4",
+        "isRemote": false,
+        "amb": "amb_goldfinch"
+    },
+    "level5": {
+        "spineName": "level5_words",
+        "isRemote": false,
+        "amb": null
+    },
+    "level6": {
+        "spineName": "level6",
+        "isRemote": false,
+        "amb": "amb_water"
+    },
+    "level7": {
+        "spineName": "level7",
+        "isRemote": false,
+        "amb": null
+    },
+    "level8": {
+        "spineName": "level8",
+        "isRemote": false,
+        "amb": null
+    },
+    "level9": {
+        "spineName": "level9_generator",
+        "isRemote": false,
+        "amb": null
+    },
+    "level10": {
+        "spineName": "level10",
+        "isRemote": false,
+        "amb": null
+    },
+    "level11": {
+        "spineName": "level11",
+        "isRemote": false,
+        "amb": "amb_rain"
+    },
+    "level12": {
+        "spineName": "level12_shadows",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level13": {
+        "spineName": "level13",
+        "isRemote": false,
+        "amb": "amb_water"
+    },
+    "level14": {
+        "spineName": "level14",
+        "isRemote": false,
+        "amb": "amb_birds"
+    },
+    "level15": {
+        "spineName": "level15_words",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level16": {
+        "spineName": "level16",
+        "isRemote": false,
+        "amb": "amb_backyard"
+    },
+    "level17": {
+        "spineName": "level17",
+        "isRemote": false,
+        "amb": null
+    },
+    "level18": {
+        "spineName": "level18",
+        "isRemote": false,
+        "amb": null
+    },
+    "level19": {
+        "spineName": "level19_generator",
+        "isRemote": false,
+        "amb": null
+    },
+    "level20": {
+        "spineName": "level20",
+        "isRemote": false,
+        "amb": null
+    },
+    "level21": {
+        "spineName": "level21",
+        "isRemote": false,
+        "amb": null
+    },
+    "level22": {
+        "spineName": "level22_shadows",
+        "isRemote": false,
+        "amb": null
+    },
+    "level23": {
+        "spineName": "level23",
+        "isRemote": false,
+        "amb": "amb_water"
+    },
+    "level24": {
+        "spineName": "level24",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level25": {
+        "spineName": "level25_words",
+        "isRemote": false,
+        "amb": null
+    },
+    "level26": {
+        "spineName": "level26",
+        "isRemote": false,
+        "amb": "amb_water"
+    },
+    "level27": {
+        "spineName": "level27",
+        "isRemote": false,
+        "amb": null
+    },
+    "level28": {
+        "spineName": "level28",
+        "isRemote": false,
+        "amb": null
+    },
+    "level29": {
+        "spineName": "level29_generator",
+        "isRemote": false,
+        "amb": null
+    },
+    "level30": {
+        "spineName": "level30",
+        "isRemote": false,
+        "amb": null
+    },
+    "level31": {
+        "spineName": "level31",
+        "isRemote": false,
+        "amb": null
+    },
+    "level32": {
+        "spineName": "level32_shadows",
+        "isRemote": false,
+        "amb": null
+    },
+    "level33": {
+        "spineName": "level33",
+        "isRemote": false,
+        "amb": "amb_water"
+    },
+    "level34": {
+        "spineName": "level34",
+        "isRemote": false,
+        "amb": null
+    },
+    "level35": {
+        "spineName": "level35_words",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level36": {
+        "spineName": "level36",
+        "isRemote": false,
+        "amb": "amb_water"
+    },
+    "level37": {
+        "spineName": "level37",
+        "isRemote": false,
+        "amb": null
+    },
+    "level38": {
+        "spineName": "level38",
+        "isRemote": false,
+        "amb": null
+    },
+    "level39": {
+        "spineName": "level39_generator",
+        "isRemote": false,
+        "amb": null
+    },
+    "level40": {
+        "spineName": "level40",
+        "isRemote": false,
+        "amb": "amb_birds"
+    },
+    "level41": {
+        "spineName": "level41",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level42": {
+        "spineName": "level42_shadows",
+        "isRemote": false,
+        "amb": null
+    },
+    "level43": {
+        "spineName": "level43",
+        "isRemote": false,
+        "amb": "amb_boiling"
+    },
+    "level44": {
+        "spineName": "level44",
+        "isRemote": false,
+        "amb": null
+    },
+    "level45": {
+        "spineName": "level45_words",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level46": {
+        "spineName": "level46",
+        "isRemote": false,
+        "amb": null
+    },
+    "level47": {
+        "spineName": "level47",
+        "isRemote": false,
+        "amb": "amb_fireplace"
+    },
+    "level48": {
+        "spineName": "level48_generator",
+        "isRemote": false,
+        "amb": null
+    },
+    "level49": {
+        "spineName": "level49",
+        "isRemote": false,
+        "amb": null
+    }
+}

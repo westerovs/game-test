@@ -1,0 +1,1702 @@
+{
+  "lv0": {
+    "intro": {
+      "text": [
+        "Congratulations on your purchase of the hotel!\nI trust you will care for it well and restore this remarkable place to its former glory.",
+        "\"This entrance looks like it hasn't been opened in a century! Time to breathe life into the porch. Let's transform it!\"",
+        "\"Leaves, branches, trash... This is no way to greet guests! Let's clear the path.\"",
+        "\"Looks like the pond water flooded the porch - complete with fish! Gotta clean this up!\"",
+        "\"Feels like a storm swept everything away... except the mess. Let's make this porch cozy again!\""
+      ],
+      "speech": [
+        "speech_en_lv0_intro0",
+        "speech_en_lv0_intro1",
+        "speech_en_lv0_intro2",
+        "speech_en_lv0_intro3",
+        "speech_en_lv0_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"If this hotel wanted to test my patience right from the entrance, it clearly didn't know who it was dealing with!\"",
+        "\"Brilliant work! This isn't just a porch anymore - it's our hotel's calling card!\"",
+        "\"Perfect job! The entrance looks brand new - we're off to a great start!\"",
+        "\"Fantastic! With this cleanliness and coziness, the porch has regained its charm.\"",
+        "\"Excellent! The porch is clean and tidy again. Order must be maintained - our guests are already arriving!\""
+      ],
+      "speech": [
+        "speech_en_lv0_outro0",
+        "speech_en_lv0_outro1",
+        "speech_en_lv0_outro2",
+        "speech_en_lv0_outro3",
+        "speech_en_lv0_outro4"
+      ]
+    }
+  },
+  "lv1": {
+    "intro": {
+      "text": [
+        "\"Seems the last guest checked out ages ago. Gotta tidy up if I want to revive this place!\"",
+        "\"New guests have arrived! Time to find everyone and assign their rooms. Let's go!\"",
+        "\"The mess is back, but no big deal - a quick cleanup, and this lobby will shine!\"",
+        "\"Someone clearly forgot to close the window... Birds are treating the lobby like home. Time to restore order!\"",
+        "\"The lobby's turned into a lost-and-found! Let's keep what matters and toss the rest.\""
+      ],
+      "speech": [
+        "speech_en_lv1_intro0",
+        "speech_en_lv1_intro1",
+        "speech_en_lv1_intro2",
+        "speech_en_lv1_intro3",
+        "speech_en_lv1_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Now we can breathe here again - even the doorbell works! Just need to welcome guests back!\"",
+        "\"Great job! Everything's in place, and guests can finally check in comfortably.\"",
+        "\"Wonderful! The lobby welcomes guests with coziness and cleanliness - this is how good first impressions are made!\"",
+        "\"Well done - the reception desk is shining, and not a single bird will get inside anymore!\"",
+        "\"Brilliant result! Even our regular guests will be surprised by how cozy and neat it's become!\""
+      ],
+      "speech": [
+        "speech_en_lv1_outro0",
+        "speech_en_lv1_outro1",
+        "speech_en_lv1_outro2",
+        "speech_en_lv1_outro3",
+        "speech_en_lv1_outro4"
+      ]
+    }
+  },
+  "lv2": {
+    "intro": {
+      "text": [
+        "\"Looks like the cats have claimed this room as theirs. Time to reclaim it!\"",
+        "\"Seems the party was a blast, but now there's a mess. Time to scrub up!\"",
+        "\"Vases and cats... A disaster waiting to happen! Better be careful.\"",
+        "\"This room looks like a carnival exploded - glitter and snacks everywhere. Let's restore some sanity!\"",
+        "\"This room must've been party central. Let's prep it for the next guests!\""
+      ],
+      "speech": [
+        "speech_en_lv2_intro0",
+        "speech_en_lv2_intro1",
+        "speech_en_lv2_intro2",
+        "speech_en_lv2_intro3",
+        "speech_en_lv2_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Perfect! The room is back in order - no cats were harmed, and all vases are intact.\"",
+        "\"Everything's sparkling! The party's over but order remains - the room is ready for new stories.\"",
+        "\"Impeccable! The room looks straight from our catalog, even the cats approve.\"",
+        "\"Brilliant work! Now you can relax here without tripping over party poppers.\"",
+        "\"Cozy restored! New guests would never guess how much fun happened here.\""
+      ],
+      "speech": [
+        "speech_en_lv2_outro0",
+        "speech_en_lv2_outro1",
+        "speech_en_lv2_outro2",
+        "speech_en_lv2_outro3",
+        "speech_en_lv2_outro4"
+      ]
+    }
+  },
+  "lv3": {
+    "intro": {
+      "text": [
+        "\"Total chaos here - coffee, notes, cookies... Let's salvage the useful bits from this creative disaster.\"",
+        "\"Someone pulled an all-nighter - cups, papers, chargers... Let's sort this out.\"",
+        "\"This workspace clearly survived a deadline. Time to declutter the desk - and my mind!\"",
+        "\"The computer's ready, but everything around it is chaos. Time to organize!\"",
+        "\"Feels like someone was searching for inspiration... in every single scrap of paper! Let’s sort through this chaos.\""
+      ],
+      "speech": [
+        "speech_en_lv3_intro0",
+        "speech_en_lv3_intro1",
+        "speech_en_lv3_intro2",
+        "speech_en_lv3_intro3",
+        "speech_en_lv3_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Excellent! The workspace is clean and inspiring - ready for creativity without distracting cups and papers.\"",
+        "\"Order restored - now even ideas organize themselves!\"",
+        "\"Everything in its place! It's more pleasant to work and easier to think at this desk.\"",
+        "\"Cleanliness conquered chaos - now this corner breathes tranquility again.\"",
+        "\"Done! The workspace shines, meaning a productive day ahead.\""
+      ],
+      "speech": [
+        "speech_en_lv3_outro0",
+        "speech_en_lv3_outro1",
+        "speech_en_lv3_outro2",
+        "speech_en_lv3_outro3",
+        "speech_en_lv3_outro4"
+      ]
+    }
+  },
+  "lv4": {
+    "intro": {
+      "text": [
+        "\"The admin office... or chaos control headquarters? Time to take back control—and add some coziness.\"",
+        "\"The admin office looks more like a forest than a workspace. Let’s restore its professional vibe!\"",
+        "\"Hotel supplies have taken over my office. Let’s clear out the clutter!\"",
+        "\"Ancient scrolls demand careful handling. Let’s gather them up gently.\"",
+        "\"A tidy office means successful business. Let’s prep this space for productivity!\""
+      ],
+      "speech": [
+        "speech_en_lv4_intro0",
+        "speech_en_lv4_intro1",
+        "speech_en_lv4_intro2",
+        "speech_en_lv4_intro3",
+        "speech_en_lv4_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Order restored! Now the office inspires clear decisions and great plans again.\"",
+        "\"Great job! Not a single branch left in the office - now it's a workspace, not a forest clearing.\"",
+        "\"Everything sorted, nothing lost - now we can manage the hotel from this office in peace.\"",
+        "\"Everything in its place, all important papers collected. The office radiates confidence and order.\"",
+        "\"No more chaos - now it's pleasant to work, receive guests and make plans here!\""
+      ],
+      "speech": [
+        "speech_en_lv4_outro0",
+        "speech_en_lv4_outro1",
+        "speech_en_lv4_outro2",
+        "speech_en_lv4_outro3",
+        "speech_en_lv4_outro4"
+      ]
+    }
+  },
+  "lv5": {
+    "intro": {
+      "text": [
+        "\"Time to clean up and collect all the forgotten items—this room deserves a second chance!\"",
+        "\"Someone left in a hurry—forgotten things are everywhere. Let’s gather all the lost items.\"",
+        "\"The guests are gone, but they left behind a whole collection of lost trinkets. Time to sort it out!\"",
+        "\"Souvenirs, glasses... Someone was clearly rushing for a train. Let’s check everything off the list!\"",
+        "\"Every item in this room tells a story. Let’s find them all before the next guest checks in.\""
+      ],
+      "speech": [
+        "speech_en_lv5_intro0",
+        "speech_en_lv5_intro1",
+        "speech_en_lv5_intro2",
+        "speech_en_lv5_intro3",
+        "speech_en_lv5_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Great! All forgotten items collected - the room is ready for new guests.\"",
+        "\"That's it. Keepsakes found, order restored - time to move forward.\"",
+        "\"Everything found and sorted - the room is back in order and ready for new stories.\"",
+        "\"Done! The room is empty, clean and peaceful again - as if no one ever lived here.\"",
+        "\"Good job! Maybe someone will return for their lost story...\""
+      ],
+      "speech": [
+        "speech_en_lv5_outro0",
+        "speech_en_lv5_outro1",
+        "speech_en_lv5_outro2",
+        "speech_en_lv5_outro3",
+        "speech_en_lv5_outro4"
+      ]
+    }
+  },
+  "lv6": {
+    "intro": {
+      "text": [
+        "\"Towels on the floor, tubes everywhere... Someone was packing in a hurry. Time to tidy up!\"",
+        "\"This bathroom looks more like a cosmetics store display. Let’s organize it properly.\"",
+        "\"To turn this bathroom back into a relaxation zone, we’ll need a little magic—and cleaning!\"",
+        "\"Like a mini tornado blew through—tubes, towels, bottles everywhere! Time to rescue the coziness.\"",
+        "\"This bathroom needs our attention—stuff everywhere, and order went on vacation long ago.\""
+      ],
+      "speech": [
+        "speech_en_lv6_intro0",
+        "speech_en_lv6_intro1",
+        "speech_en_lv6_intro2",
+        "speech_en_lv6_intro3",
+        "speech_en_lv6_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Great work! The bathroom now shines with cleanliness - we literally brought it back to life!\"",
+        "\"Amazing job! The bathroom looks flawless now - everything in its place and perfect order.\"",
+        "\"Simply magnificent! We've made the bathroom even cozier and more harmonious.\"",
+        "\"Superb! The bathroom looks new again, ready for the next guest.\"",
+        "\"Incredible! You handled the mess so fast, now the bathroom looks spa-worthy!\""
+      ],
+      "speech": [
+        "speech_en_lv6_outro0",
+        "speech_en_lv6_outro1",
+        "speech_en_lv6_outro2",
+        "speech_en_lv6_outro3",
+        "speech_en_lv6_outro4"
+      ]
+    }
+  },
+  "lv7": {
+    "intro": {
+      "text": [
+        "\"Hard to believe, but this isn’t a lost-and-found storage—it’s our hotel room. Or at least it was... until today!\"",
+        "\"Looks like this room hosted the party of the century: balloons, confetti, and a mysterious cake slice under the pillow. Time to clean!\"",
+        "\"Feels like an orchestra rehearsal... or a drummers’ party happened here. Let’s find all the instruments and restore order!\"",
+        "\"This was a guest room... until the fluffy invaders took over. Let’s return it to civilized condition!\"",
+        "\"More stuff here than in a shopaholic’s suitcase! Let’s get to work before the room vanishes under the mess.\""
+      ],
+      "speech": [
+        "speech_en_lv7_intro0",
+        "speech_en_lv7_intro1",
+        "speech_en_lv7_intro2",
+        "speech_en_lv7_intro3",
+        "speech_en_lv7_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Everything in its place, not a single item harmed - this room could be in our hotel brochure now!\"",
+        "\"Party chaos defeated, glitter conquered, even under the pillow - spotless. Heroic cleaning complete!\"",
+        "\"Musical chaos tamed, drums silenced - the room is ready to welcome guests in peace and order.\"",
+        "\"All cleaned up, cats happy, guests delighted - now the room looks like its catalog photo again!\"",
+        "\"Hooray! Now you can walk around without playing a survival quest. Clean, cozy - just as it should be!\""
+      ],
+      "speech": [
+        "speech_en_lv7_outro0",
+        "speech_en_lv7_outro1",
+        "speech_en_lv7_outro2",
+        "speech_en_lv7_outro3",
+        "speech_en_lv7_outro4"
+      ]
+    }
+  },
+  "lv8": {
+    "intro": {
+      "text": [
+        "\"This room looks like it was forgotten in storage. So much trash and lost items! Let’s start cleaning!\"",
+        "\"Seems like the renovations weren’t finished. All the tools and repair supplies are here—time to organize!\"",
+        "\"It’s like an archeological dig site! Antiques everywhere. They need to be carefully collected and put back.\"",
+        "\"This room’s turned into a cleaning supply warehouse! Mops, boxes, bottles of detergent... Time to tidy up!\"",
+        "\"Hard to believe, but the entire cleaning arsenal ended up here. Time to put everything back and restore order!\""
+      ],
+      "speech": [
+        "speech_en_lv8_intro0",
+        "speech_en_lv8_intro1",
+        "speech_en_lv8_intro2",
+        "speech_en_lv8_intro3",
+        "speech_en_lv8_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"All cleaned up, the room looks like a place for rest again, not for trash. We did great!\"",
+        "\"Renovation complete, tools put away, room ready for guests. You're an organization master!\"",
+        "\"Archaeological mess sorted, all antiquities in place. The room now looks like a museum, not a dig site!\"",
+        "\"All mops and cleaning supplies stored, and now the room sparkles. Excellent work!\"",
+        "\"Cleaning complete - the room looks brand new, perfectly clean and guest-ready!\""
+      ],
+      "speech": [
+        "speech_en_lv8_outro0",
+        "speech_en_lv8_outro1",
+        "speech_en_lv8_outro2",
+        "speech_en_lv8_outro3",
+        "speech_en_lv8_outro4"
+      ]
+    }
+  },
+  "lv9": {
+    "intro": {
+      "text": [
+        "\"Time to upgrade the hotel furniture! Let’s pick the perfect pieces for this room.\"",
+        "\"Some of this furniture is clearly outdated. Time to order new pieces and make the hotel feel fresh again!\"",
+        "\"This room desperately needs a makeover. Let’s choose furniture that fits perfectly!\"",
+        "\"Out with the old, in with the new—let’s pick something stylish and comfy for our guests!\"",
+        "\"We've got a little furniture frenzy here! Time to pick new pieces for the hotel.\""
+      ],
+      "speech": [
+        "speech_en_lv9_intro0",
+        "speech_en_lv9_intro1",
+        "speech_en_lv9_intro2",
+        "speech_en_lv9_intro3",
+        "speech_en_lv9_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Excellent! New furniture ordered, and the room looks fresh. Guests will love it!\"",
+        "\"Superb! Everything selected and ordered - the room will be even more comfortable now.\"",
+        "\"Success! Furniture chosen - the room will look stylish and cozy for every guest.\"",
+        "\"Great job! New furniture coming soon - this room will look straight from a luxury catalog!\"",
+        "\"Perfect! All the necessary items have been selected, and now the rooms are ready to welcome guests with maximum comfort.\""
+      ],
+      "speech": [
+        "speech_en_lv9_outro0",
+        "speech_en_lv9_outro1",
+        "speech_en_lv9_outro2",
+        "speech_en_lv9_outro3",
+        "speech_en_lv9_outro4"
+      ]
+    }
+  },
+  "lv10": {
+    "intro": {
+      "text": [
+        "\"This elegant room has some forgotten items left behind. Let's tidy up carefully without disturbing its atmosphere.\"",
+        "\"Even Victorian luxury needs cleaning. Time to scrub with royal grace!\"",
+        "\"So many things here - like a lord's personal collection! Let's decide what's important and what needs to go.\"",
+        "\"Crystal, carpets... and a bucket with rags? Not very noble, but cleaning this room requires finesse.\"",
+        "\"This room holds antique treasures, but some are just junk. Let's give it a polished look.\""
+      ],
+      "speech": [
+        "speech_en_lv10_intro0",
+        "speech_en_lv10_intro1",
+        "speech_en_lv10_intro2",
+        "speech_en_lv10_intro3",
+        "speech_en_lv10_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Brilliant! The room breathes vintage coziness again - as if the Victorian era has returned, but without the dust.\"",
+        "\"Magnificent! The cleaning is complete, and now we can host the most sophisticated guests in this luxury.\"",
+        "\"Flawless! Everything needed is in its place, and the room delights with its elegant atmosphere once more.\"",
+        "\"Excellent work! Even Victorian ghosts would be pleased - order has been restored!\"",
+        "\"Graceful and clean! Now this room is worthy of both tea from porcelain sets and morning sun through lace curtains.\""
+      ],
+      "speech": [
+        "speech_en_lv10_outro0",
+        "speech_en_lv10_outro1",
+        "speech_en_lv10_outro2",
+        "speech_en_lv10_outro3",
+        "speech_en_lv10_outro4"
+      ]
+    }
+  },
+  "lv11": {
+    "intro": {
+      "text": [
+        "\"Hard to tell if guests were relaxing or filming 'Post-Apocalypse' here. Let's restore the coziness!\"",
+        "\"Well, someone clearly decided to have a picnic right in the room. Just need to clean up the aftermath!\"",
+        "\"This room could star in a show called 'Find the Order If You Can!' - let's start searching now!\"",
+        "\"Feels like items are multiplying by themselves. Time to stop this chaos and restore cleanliness!\"",
+        "\"Either a Viking lived here or battled here. Helmets, axes... Time to turn this 'battlefield' into a cozy room!\""
+      ],
+      "speech": [
+        "speech_en_lv11_intro0",
+        "speech_en_lv11_intro1",
+        "speech_en_lv11_intro2",
+        "speech_en_lv11_intro3",
+        "speech_en_lv11_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Now we can breathe easy again - the room shines, and we could check guests in right this minute!\"",
+        "\"Great work! Now this room looks like a cozy retreat again, not a storage space for forgotten items.\"",
+        "\"Cozy restored, everything in place - now the room resembles a corner of luxury again, not a ship after a storm.\"",
+        "\"We did it! This room inspires relaxation again, not calls for an order-rescue expedition.\"",
+        "\"Even Vikings would approve of such cleaning - now it's not a battlefield but genuine hotel comfort!\""
+      ],
+      "speech": [
+        "speech_en_lv11_outro0",
+        "speech_en_lv11_outro1",
+        "speech_en_lv11_outro2",
+        "speech_en_lv11_outro3",
+        "speech_en_lv11_outro4"
+      ]
+    }
+  },
+  "lv12": {
+    "intro": {
+      "text": [
+        "\"This seems more like a secret stash of lost items than a guest room. Let's restore the fireplace to its glory!\"",
+        "\"The fireplace is the heart of this room. And hearts shouldn't be surrounded by clutter. Let's make it cozy!\"",
+        "\"Ah, the fireplace... Heart of warmth! But to make it welcoming rather than scary, we'll need to tidy up.\"",
+        "\"In this elegant room, the fireplace deserves better surroundings. Time to deal with forgotten items!\"",
+        "\"The fireplace is this room's centerpiece! But without cleanliness and order, its elegance stays hidden.\""
+      ],
+      "speech": [
+        "speech_en_lv12_intro0",
+        "speech_en_lv12_intro1",
+        "speech_en_lv12_intro2",
+        "speech_en_lv12_intro3",
+        "speech_en_lv12_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Splendid! The trash is gone, and the fireplace has become the king of this room - ready to welcome the most elegant guests!\"",
+        "\"Excellent! The fireplace now looks like it belongs to true aesthetes - order and coziness in every corner. Ready to welcome anyone with open arms!\"",
+        "\"Great! Now the room looks like a respected classic, and the fireplace - like this room's pride and joy!\"",
+        "\"Great job! The fireplace has become a real focal point now, not just a nook for unwanted items!\"",
+        "\"Superb! Now the room truly lives up to its elegant status - and the fireplace is simply perfect here!\""
+      ],
+      "speech": [
+        "speech_en_lv12_outro0",
+        "speech_en_lv12_outro1",
+        "speech_en_lv12_outro2",
+        "speech_en_lv12_outro3",
+        "speech_en_lv12_outro4"
+      ]
+    }
+  },
+  "lv13": {
+    "intro": {
+      "text": [
+        "\"So many tubes in this bathroom we could open our own store! Time to restore order.\"",
+        "\"Looks like sea creatures sneaked into this bathroom - sponges, shells, seaweed... Just missing a docked ship!\"",
+        "\"Towels have scattered, soap is hiding somewhere... Launching Operation Cleanliness!\"",
+        "\"The air smells of neglect... But that will fade once we start our transformation.\"",
+        "\"Everything's here - from empty tubes to stray towels. This bathroom seems to have a life of its own! Time to intervene!\""
+      ],
+      "speech": [
+        "speech_en_lv13_intro0",
+        "speech_en_lv13_intro1",
+        "speech_en_lv13_intro2",
+        "speech_en_lv13_intro3",
+        "speech_en_lv13_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Now we can have a spa day! Everything's clean, tidy, and nothing's hiding in corners. Bravo!\"",
+        "\"Sea creatures will have to find new shelter - the bathroom shines like a pearl again! Excellent work!\"",
+        "\"Towels in place, soap found, order restored! A true feat of cleanliness!\"",
+        "\"The scent of freshness has replaced the smell of neglect. Now it's pleasant to breathe in the bathroom again!\"",
+        "\"The bathroom is transformed! Even the tiles seem to smile from cleanliness. Magnificently done!\""
+      ],
+      "speech": [
+        "speech_en_lv13_outro0",
+        "speech_en_lv13_outro1",
+        "speech_en_lv13_outro2",
+        "speech_en_lv13_outro3",
+        "speech_en_lv13_outro4"
+      ]
+    }
+  },
+  "lv14": {
+    "intro": {
+      "text": [
+        "\"If walls could talk, they'd complain about this mess. But since they're silent - we'll act!\"",
+        "\"Seems this room starred in a drama: intense scenes, strong emotions... and zero cleaning. We'll fix that!\"",
+        "\"Someone had a TV marathon here... with a side of scattered items. Time to activate 'restoration mode'!\"",
+        "\"If this were a show, it'd be called 'Dust, Cups and Mysteries.' Starring us - the Cleaning Heroes!\"",
+        "\"Dreamy window, cinematic atmosphere... and surprise - slippers on the windowsill! Let's solve this mystery and restore beauty.\""
+      ],
+      "speech": [
+        "speech_en_lv14_intro0",
+        "speech_en_lv14_intro1",
+        "speech_en_lv14_intro2",
+        "speech_en_lv14_intro3",
+        "speech_en_lv14_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"From dramatic mess to breathtaking cleanliness - all in the best traditions of the genre!\"",
+        "\"And now it's not a drama but a happy ending! The room shines like after happy ending credits.\"",
+        "\"The space has become cozy and ready for new events. This episode is complete, awaiting the sequel!\"",
+        "\"The cleaning heroes have completed their mission! In this episode - only cleanliness and shine.\"",
+        "\"The mystery of the slippers is solved, the plot concluded, the interior sparkling - time to write a new script!\""
+      ],
+      "speech": [
+        "speech_en_lv14_outro0",
+        "speech_en_lv14_outro1",
+        "speech_en_lv14_outro2",
+        "speech_en_lv14_outro3",
+        "speech_en_lv14_outro4"
+      ]
+    }
+  },
+  "lv15": {
+    "intro": {
+      "text": [
+        "\"Looks like cleaning wasn't on this room's schedule. But we'll fix that!\"",
+        "\"The place is messy, but we're here to help! From trash to mops - we've got it under control.\"",
+        "\"This room could be cozy if not for scattered items and fireplace dust. Time for a makeover!\"",
+        "\"The mess by the fireplace resembles 'The Unmovable Chaos' painting. Let's add some order to this picture!\"",
+        "\"The fireplace is barely visible. It seems to be asking for help. Let's make it the star of this room!\""
+      ],
+      "speech": [
+        "speech_en_lv15_intro0",
+        "speech_en_lv15_intro1",
+        "speech_en_lv15_intro2",
+        "speech_en_lv15_intro3",
+        "speech_en_lv15_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"The fireplace shines, everything's in place - the room is ready to welcome guests again for cozy evenings. Excellent work!\"",
+        "\"Now we can admire the fireplace again, not the chaos! Amazing result!\"",
+        "\"With such order, we could film a coziness commercial! The fireplace is grateful, the room is happy, and you're the hero!\"",
+        "\"We've done the impossible - now it's not a disaster scene but a corner of peace. Bravo!\"",
+        "\"Now the fireplace can stand proudly at the center of the room. Great job, everything shines!\""
+      ],
+      "speech": [
+        "speech_en_lv15_outro0",
+        "speech_en_lv15_outro1",
+        "speech_en_lv15_outro2",
+        "speech_en_lv15_outro3",
+        "speech_en_lv15_outro4"
+      ]
+    }
+  },
+  "lv16": {
+    "intro": {
+      "text": [
+        "\"This makes me want to picnic! Just a little tidying and the yard will be joyful again.\"",
+        "\"Sunny day calls for fresh air! Just need to add some coziness before inviting guests.\"",
+        "\"The barbecue is calling, but first - a small heroic task: tidy up and prepare the yard for fun!\"",
+        "\"Smells like summer, birds are singing... perfect for cheerful cleaning!\"",
+        "\"This cozy patio begs for lemonade and laughter. But first - let's clear space for relaxation!\""
+      ],
+      "speech": [
+        "speech_en_lv16_intro0",
+        "speech_en_lv16_intro1",
+        "speech_en_lv16_intro2",
+        "speech_en_lv16_intro3",
+        "speech_en_lv16_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Now we can breathe easier! The courtyard is transformed and ready for warm gatherings and aromatic barbecues.\"",
+        "\"What a result! Just need to turn on some music, grill something tasty - and enjoy.\"",
+        "\"Great work! Now this corner pleases the eye again and invites summer evenings to be spent here.\"",
+        "\"We did excellently! The courtyard became so cozy that no one wants to leave.\"",
+        "\"The sun shines brighter when everything's clean! All set for relaxation and good moods.\""
+      ],
+      "speech": [
+        "speech_en_lv16_outro0",
+        "speech_en_lv16_outro1",
+        "speech_en_lv16_outro2",
+        "speech_en_lv16_outro3",
+        "speech_en_lv16_outro4"
+      ]
+    }
+  },
+  "lv17": {
+    "intro": {
+      "text": [
+        "\"This room seems to have seen it all: from backpacks to magnet collections. Time to help it breathe easier!\"",
+        "\"Fluffy guests turned this into their safari. Adorable... but time to return the room to humans!\"",
+        "\"Looks like an explorer tourist stayed here with adventure-packed luggage. Time to curate this exhibition!\"",
+        "\"Backpacks, guidebooks, a mysterious umbrella... This isn't mess - it's traces of great discoveries.\"",
+        "\"Fluffy tails made this their vacation base. Overload of cuteness - but let's return the room to its hotel purpose!\""
+      ],
+      "speech": [
+        "speech_en_lv17_intro0",
+        "speech_en_lv17_intro1",
+        "speech_en_lv17_intro2",
+        "speech_en_lv17_intro3",
+        "speech_en_lv17_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Great job! Now the room is ready for new stories and travelers' backpacks again.\"",
+        "\"Excellent work! The cat invasion has been defeated, the room shines!\"",
+        "\"Traces of adventures have been cleared, but the spirit of wanderlust remains. Perfect balance of cleanliness and coziness!\"",
+        "\"Traces of great discoveries have been tidied, atmosphere preserved. This room awaits new heroes again!\"",
+        "\"Mission 'Cat Resort' completed successfully. The room shines - we did excellently!\""
+      ],
+      "speech": [
+        "speech_en_lv17_outro0",
+        "speech_en_lv17_outro1",
+        "speech_en_lv17_outro2",
+        "speech_en_lv17_outro3",
+        "speech_en_lv17_outro4"
+      ]
+    }
+  },
+  "lv18": {
+    "intro": {
+      "text": [
+        "\"This room seems back from a world tour - so many suitcases, hats and mysteries! Time to bring it back to reality.\"",
+        "\"Looks like cleaning supplies rented this room. Let's free up space for guests, not mops!\"",
+        "\"Ancient vases? Or artifacts from a secret expedition? Either way - we'll find proper places.\"",
+        "\"Traces of tourist adventures everywhere. Time to collect souvenirs - and add some polish!\"",
+        "\"Mops, rags and chemical bottles threw a party here. Time to regain control of this chaos!\""
+      ],
+      "speech": [
+        "speech_en_lv18_intro0",
+        "speech_en_lv18_intro1",
+        "speech_en_lv18_intro2",
+        "speech_en_lv18_intro3",
+        "speech_en_lv18_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Now this room is ready to welcome new travelers - without any extra baggage!\"",
+        "\"Mops put away, rags folded - and the room shines again! Guests will enjoy staying here.\"",
+        "\"Antiquities are safe, and the room is ready for new explorers! The stage is set for adventure!\"",
+        "\"Tourist traces have disappeared, but we've kept the travel atmosphere. Order like in the best hotels!\"",
+        "\"All cleaning supplies are in their place, and the room is ready to welcome guests again. Time to enjoy the rest!\""
+      ],
+      "speech": [
+        "speech_en_lv18_outro0",
+        "speech_en_lv18_outro1",
+        "speech_en_lv18_outro2",
+        "speech_en_lv18_outro3",
+        "speech_en_lv18_outro4"
+      ]
+    }
+  },
+  "lv19": {
+    "intro": {
+      "text": [
+        "\"So many keys on this table we could unlock half the city! Just need to figure out what they're for.\"",
+        "\"Seems they hid the key to the heart... and the pantry, and the basement, and the closet. Time to organize!\"",
+        "\"If keys could talk, they'd argue over who's most important. Let's tidy up before the conference starts.\"",
+        "\"This table seems like Headquarters of the Keeper of Keys. Just need to find where the lock is hiding!\"",
+        "\"Legend has it: among these keys lies the one that opens the coziest room in the hotel. Shall we test that theory?\""
+      ],
+      "speech": [
+        "speech_en_lv19_intro0",
+        "speech_en_lv19_intro1",
+        "speech_en_lv19_intro2",
+        "speech_en_lv19_intro3",
+        "speech_en_lv19_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"All keys have found their place, and the table - its peace. The mystery has been solved!\"",
+        "\"Order restored! Now we just need to not lose that one important key...\"",
+        "\"Now every key is in its place - and we're not afraid of any secret doors!\"",
+        "\"Excellent work! Thanks to you, every key is in its place now, and the table breathes freely again.\"",
+        "\"Brilliant result! Thanks to you, this pile of metal has transformed back into a neat and important corner of the hotel.\""
+      ],
+      "speech": [
+        "speech_en_lv19_outro0",
+        "speech_en_lv19_outro1",
+        "speech_en_lv19_outro2",
+        "speech_en_lv19_outro3",
+        "speech_en_lv19_outro4"
+      ]
+    }
+  },
+  "lv20": {
+    "intro": {
+      "text": [
+        "\"New mission: sort through piles of mysterious junk and collect all useful artifacts. Let's go!\"",
+        "\"Warning: difficulty level - 'maximum chaos.' But with your skills, we're sure to win!\"",
+        "\"Welcome to episode 'Lost Items and the Great Mess.' Time for a grand cleanup!\"",
+        "\"Looks like someone failed the 'Cleaning' level... But you'll definitely defeat the final boss - Order!\"",
+        "\"Welcome to mission 'Room Raid.' Our goal: find, clean, and restore everything to perfect order!\""
+      ],
+      "speech": [
+        "speech_en_lv20_intro0",
+        "speech_en_lv20_intro1",
+        "speech_en_lv20_intro2",
+        "speech_en_lv20_intro3",
+        "speech_en_lv20_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Mission accomplished with excellence. This room is now a model of order. Well-deserved reward: perfect coziness!\"",
+        "\"Congratulations, hero! The mess has been defeated, and now the room shines like after an epic victory.\"",
+        "\"Grand victory over the chaos! Cleanliness points earned, reputation saved - time to move forward!\"",
+        "\"Magnificent! The battle with clutter is over, trophies collected. Moving on to the next mission!\"",
+        "\"Level completed! All trash traps have been neutralized!\""
+      ],
+      "speech": [
+        "speech_en_lv20_outro0",
+        "speech_en_lv20_outro1",
+        "speech_en_lv20_outro2",
+        "speech_en_lv20_outro3",
+        "speech_en_lv20_outro4"
+      ]
+    }
+  },
+  "lv21": {
+    "intro": {
+      "text": [
+        "\"Welcome to a safari in the world of forgotten items! The zebra's in place, only order ran away. Time to catch it!\"",
+        "\"Seems the zebra tried hiding under the clutter! Forward, in search of cleanliness and order!\"",
+        "\"This room has seen it all: adventures, suitcases and piles of forgotten trinkets. Time to clear the territory!\"",
+        "\"Room styled 'explorer meets wild nature.' Just need to tame the chaos!\"",
+        "\"Looks like the zebra lost its way and ended up in a den of lost socks. We're here to save the day!\""
+      ],
+      "speech": [
+        "speech_en_lv21_intro0",
+        "speech_en_lv21_intro1",
+        "speech_en_lv21_intro2",
+        "speech_en_lv21_intro3",
+        "speech_en_lv21_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"No traces of mess left! We completed the task perfectly - now the room embodies coziness and order!\"",
+        "\"The room has transformed, all thanks to you! The zebra on the blanket can be proud of its new surroundings. Excellent work!\"",
+        "\"No matter how scattered things were, you put everything in order! This room is now a true oasis. Bravo!\"",
+        "\"Everything back in its place, and the room's atmosphere became cozy and harmonious. You're at your best, as always!\"",
+        "\"You didn't just tidy the room - you made it bright and stylish! Well done, let's keep up the good work!\""
+      ],
+      "speech": [
+        "speech_en_lv21_outro0",
+        "speech_en_lv21_outro1",
+        "speech_en_lv21_outro2",
+        "speech_en_lv21_outro3",
+        "speech_en_lv21_outro4"
+      ]
+    }
+  },
+  "lv22": {
+    "intro": {
+      "text": [
+        "\"Everything once considered valuable now fills the basement. Time to organize and return items to their rightful places!\"",
+        "\"The basement's become a warehouse of confusion. But don't worry, we'll handle it and restore perfect order!\"",
+        "\"This basement is full of old, forgotten items. But we'll find real treasures among them!\"",
+        "\"Welcome to the basement where junk and disorder reign! We're here to put everything back in its place.\"",
+        "\"Seems the basement collected everything ever used... and things that may never see daylight again. Time to organize!\""
+      ],
+      "speech": [
+        "speech_en_lv22_intro0",
+        "speech_en_lv22_intro1",
+        "speech_en_lv22_intro2",
+        "speech_en_lv22_intro3",
+        "speech_en_lv22_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Wow, what a result! Everything in its place, and the basement is now ready for new treasures.\"",
+        "\"Order reigns here now! We did an incredible job, and the basement has returned to being part of this cozy world.\"",
+        "\"Not a trace of junk left! We turned this basement into a place where everything is under control and ready for use.\"",
+        "\"Now the basement is a pleasant place to enter! Everything in its place, with coziness and order restored!\"",
+        "\"What junk? We handled it in no time. Now the basement is ready for new challenges and adventures!\""
+      ],
+      "speech": [
+        "speech_en_lv22_outro0",
+        "speech_en_lv22_outro1",
+        "speech_en_lv22_outro2",
+        "speech_en_lv22_outro3",
+        "speech_en_lv22_outro4"
+      ]
+    }
+  },
+  "lv23": {
+    "intro": {
+      "text": [
+        "\"This isn't a bathroom - it's a chaos testing ground! Let's turn it into a relaxation zone.\"",
+        "\"The bathroom's been visited by true chaos - towels, toiletries and an army of small items. Time to get to work!\"",
+        "\"This bathtub looks like a battlefield! Time to restore harmony and order.\"",
+        "\"Wow, looks like a storm passed through! But don't worry, with our help the bathroom will be perfect again.\"",
+        "\"The bathroom's a complete mess, but once we get to work - it'll be a place of relaxation again!\""
+      ],
+      "speech": [
+        "speech_en_lv23_intro0",
+        "speech_en_lv23_intro1",
+        "speech_en_lv23_intro2",
+        "speech_en_lv23_intro3",
+        "speech_en_lv23_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"The bathroom can now safely be called an oasis of cleanliness and tranquility. Excellent work!\"",
+        "\"You didn't just clean up - you gave the bathroom a second life. Well done!\"",
+        "\"Now the bathroom isn't just tidy - it's a true relaxation zone. Success!\"",
+        "\"Amazing work! We managed to transform the bathroom into a cozy space.\"",
+        "\"Great job! We turned the bathroom into a space where you can truly unwind.\""
+      ],
+      "speech": [
+        "speech_en_lv23_outro0",
+        "speech_en_lv23_outro1",
+        "speech_en_lv23_outro2",
+        "speech_en_lv23_outro3",
+        "speech_en_lv23_outro4"
+      ]
+    }
+  },
+  "lv24": {
+    "intro": {
+      "text": [
+        "\"This room is full of surprises! Everything from rugs to books... Time to restore order.\"",
+        "\"This room contains enough for a small fair. But first - let's clean up!\"",
+        "\"Seems a true collector of everything stayed here! We'll turn this chaos into harmony.\"",
+        "\"Items here aren't just scattered - they're causing mayhem! But we know what to do.\"",
+        "\"This room resembles a storage unit! But don't worry, you've got this - let's start organizing.\""
+      ],
+      "speech": [
+        "speech_en_lv24_intro0",
+        "speech_en_lv24_intro1",
+        "speech_en_lv24_intro2",
+        "speech_en_lv24_intro3",
+        "speech_en_lv24_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Excellent! We handled this mess! Now the room is ready for new guests.\"",
+        "\"Hooray! Order restored! This room looks like a place for rest and coziness again.\"",
+        "\"Superb work! Now the room is ready for those who value order and comfort.\"",
+        "\"Magnificent! We did the impossible - the room is clean and cozy again!\"",
+        "\"Great effort! Now the room is like new - ready to welcome guests and offer them comfort.\""
+      ],
+      "speech": [
+        "speech_en_lv24_outro0",
+        "speech_en_lv24_outro1",
+        "speech_en_lv24_outro2",
+        "speech_en_lv24_outro3",
+        "speech_en_lv24_outro4"
+      ]
+    }
+  },
+  "lv25": {
+    "intro": {
+      "text": [
+        "\"Welcome to Victorian elegance... with minor issues! Time to restore this dining area to its refined state.\"",
+        "\"Elegance and disorder don't mix! Time to return this corner to its sophisticated atmosphere.\"",
+        "\"You'd expect only magnificence here, but something's off. Time to restore this corner's grandeur!\"",
+        "\"This table is practically a royal throne! Time to clean it up and restore the luxurious atmosphere.\"",
+        "\"This corner exudes refinement, but traces of disorder spoil the picture. Time for transformation!\""
+      ],
+      "speech": [
+        "speech_en_lv25_intro0",
+        "speech_en_lv25_intro1",
+        "speech_en_lv25_intro2",
+        "speech_en_lv25_intro3",
+        "speech_en_lv25_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Amazing! We restored this dining area to its royal appearance. All set for exquisite dinners!\"",
+        "\"Wonderful work! We restored order, and now this dining area simply radiates style and coziness.\"",
+        "\"Everything shines and sparkles! The dining area is now ready for celebrations, looking exactly as it should - top class.\"",
+        "\"Beautiful! We restored this place to its former glory. Now we can host true royal dinners here.\"",
+        "\"Magnificent! Now this corner is ready for royal receptions - elegance and order!\""
+      ],
+      "speech": [
+        "speech_en_lv25_outro0",
+        "speech_en_lv25_outro1",
+        "speech_en_lv25_outro2",
+        "speech_en_lv25_outro3",
+        "speech_en_lv25_outro4"
+      ]
+    }
+  },
+  "lv26": {
+    "intro": {
+      "text": [
+        "\"The shower cabin almost looks like a magazine ad, just needs a little finishing touch. Let's do it!\"",
+        "\"So many bottles we could open a mini-exhibition. But we're not here for art - time to clean!\"",
+        "\"Looks like this bathroom hosted the 'Soap & Chaos' festival. Opening the season of order!\"",
+        "\"Someone clearly practiced blind towel-tossing. Let's check their aim - and restore cleanliness!\"",
+        "\"This shower stall contains everything from shampoo to dinosaurs. Time to make it a place for washing, not surprises.\""
+      ],
+      "speech": [
+        "speech_en_lv26_intro0",
+        "speech_en_lv26_intro1",
+        "speech_en_lv26_intro2",
+        "speech_en_lv26_intro3",
+        "speech_en_lv26_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Finish! The shower sparkles, the floor shines, and all clutter has retired. Now that's pro-level cleaning!\"",
+        "\"Victory is ours! The cabin no longer pretends to be a storage room, and the bathroom is once again a place of cleanliness and order.\"",
+        "\"Well, this bathroom was in chaos, but now - a model of cleanliness. Even the tiles are pleased!\"",
+        "\"Mission 'Clean Bathroom' accomplished: everything sparkles, even the bottles lined up by height. You rock!\"",
+        "\"The shower shines again like a plumbing store display! Excellent work!\""
+      ],
+      "speech": [
+        "speech_en_lv26_outro0",
+        "speech_en_lv26_outro1",
+        "speech_en_lv26_outro2",
+        "speech_en_lv26_outro3",
+        "speech_en_lv26_outro4"
+      ]
+    }
+  },
+  "lv27": {
+    "intro": {
+      "text": [
+        "\"Someone packed for a world tour... and forgot half their luggage! Let's sort this out.\"",
+        "\"This collection of lost items deserves museum display! But order comes first.\"",
+        "\"From hats to chargers - everything's mixed up in this room. Time to bring clarity to this chaos!\"",
+        "\"Items in this room threw a party... and forgot to leave. Calling all cleaners!\"",
+        "\"This room seems like a portal to the dimension of lost things. But you've got this, order-seeker!\""
+      ],
+      "speech": [
+        "speech_en_lv27_intro0",
+        "speech_en_lv27_intro1",
+        "speech_en_lv27_intro2",
+        "speech_en_lv27_intro3",
+        "speech_en_lv27_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Chaos defeated, and now the room breathes freely again! Great job!\"",
+        "\"It looked like a collector-traveler's storage... Now - a model room! Keep it up.\"",
+        "\"Even the most mysterious finds have their place now. You're the hero of this cleaning saga!\"",
+        "\"Everything shines, items collected, the room sparkles again! You don't see this level of cleaning magic every day.\"",
+        "\"Items collected, order restored - now this room is ready for new stories again. Great job, you saved it from chaos!\""
+      ],
+      "speech": [
+        "speech_en_lv27_outro0",
+        "speech_en_lv27_outro1",
+        "speech_en_lv27_outro2",
+        "speech_en_lv27_outro3",
+        "speech_en_lv27_outro4"
+      ]
+    }
+  },
+  "lv28": {
+    "intro": {
+      "text": [
+        "\"Things, things everywhere... this room decided to collect everything. Time for inventory!\"",
+        "\"This room looks like a flea market after a storm - every item clearly wants to be found.\"",
+        "\"Seems a true adventure collector stayed here - and forgot everything but memories.\"",
+        "\"So many items we should call an archaeologist, not a cleaner. Or just call you - you'll finish faster!\"",
+        "\"This room resembles Mary Poppins' bag: you never know what you'll find next. Go forth, cleanliness-seeker!\""
+      ],
+      "speech": [
+        "speech_en_lv28_intro0",
+        "speech_en_lv28_intro1",
+        "speech_en_lv28_intro2",
+        "speech_en_lv28_intro3",
+        "speech_en_lv28_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Done! Now this room looks like a room again, not a museum of forgotten items. Excellent work!\"",
+        "\"You worked so skillfully that things started organizing themselves! One victory - minus one mess!\"",
+        "\"Who said cleaning can't be fun? We turned this room into a true masterpiece!\"",
+        "\"Everything in its place, and now this room looks like there was never any mess here.\"",
+        "\"Trash defeated, items properly arranged! Now this room is an example of order!\""
+      ],
+      "speech": [
+        "speech_en_lv28_outro0",
+        "speech_en_lv28_outro1",
+        "speech_en_lv28_outro2",
+        "speech_en_lv28_outro3",
+        "speech_en_lv28_outro4"
+      ]
+    }
+  },
+  "lv29": {
+    "intro": {
+      "text": [
+        "\"Our guests are starving! Quick, let's sort the orders and feed everyone!\"",
+        "\"Dinner, lunch - so many choices! Let's figure out these dishes fast!\"",
+        "\"Wow, so many treats! No time to waste - let's start serving!\"",
+        "\"All dishes are ready, now just need to choose what to serve our guests!\"",
+        "\"The table is overflowing with food! Time to distribute all orders so no one stays hungry!\""
+      ],
+      "speech": [
+        "speech_en_lv29_intro0",
+        "speech_en_lv29_intro1",
+        "speech_en_lv29_intro2",
+        "speech_en_lv29_intro3",
+        "speech_en_lv29_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Orders successfully completed, everyone fed and satisfied! Time for well-deserved rest!\"",
+        "\"All dishes served, guests happy - mission accomplished with excellence!\"",
+        "\"All treats in place, guests delighted! Mission 'Feed Heartily' accomplished!\"",
+        "\"Guests fed, everyone found their dish! Time to summarize this tasty operation.\"",
+        "\"No delays, all dishes served! Guests are delighted with our service.\""
+      ],
+      "speech": [
+        "speech_en_lv29_outro0",
+        "speech_en_lv29_outro1",
+        "speech_en_lv29_outro2",
+        "speech_en_lv29_outro3",
+        "speech_en_lv29_outro4"
+      ]
+    }
+  },
+  "lv30": {
+    "intro": {
+      "text": [
+        "\"This room exudes royal splendor! Time to turn it into a perfect retreat.\"",
+        "\"Every element here is like a work of art. Let's make sure the order matches the excellence!\"",
+        "\"This room looks straight out of a fairy tale: elegant carvings and refined style - just needs a touch of order.\"",
+        "\"Like in a royal palace! Time to tidy up these regal quarters.\"",
+        "\"Under the canopy - just like palace chambers. Time to make this room perfect for living.\""
+      ],
+      "speech": [
+        "speech_en_lv30_intro0",
+        "speech_en_lv30_intro1",
+        "speech_en_lv30_intro2",
+        "speech_en_lv30_intro3",
+        "speech_en_lv30_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Now it's not just royal elegance but absolute order too. Guests will be thrilled!\"",
+        "\"This room boasts not just luxury but perfect order! Ready for even the most demanding guests.\"",
+        "\"This room now reflects true grandeur and style. Amazing work!\"",
+        "\"Order and elegance - everything in this room is now top-notch!\"",
+        "\"The room has become a true work of art where order and sophistication go hand in hand!\""
+      ],
+      "speech": [
+        "speech_en_lv30_outro0",
+        "speech_en_lv30_outro1",
+        "speech_en_lv30_outro2",
+        "speech_en_lv30_outro3",
+        "speech_en_lv30_outro4"
+      ]
+    }
+  },
+  "lv31": {
+    "intro": {
+      "text": [
+        "\"This room is a true kaleidoscope! Time to arrange all elements into stylish order.\"",
+        "\"Wow, what a color palette! Seems someone decided red isn't just a color but a lifestyle. Time to restore harmony!\"",
+        "\"Red may be fashionable here, but order clearly fell out of style! Time to bring back balance.\"",
+        "\"The red color sets the mood, but scattered items ruin it. Time to tidy up!\"",
+        "\"Red sets the rhythm here, while items march to their own beat! Let's create stylish order.\""
+      ],
+      "speech": [
+        "speech_en_lv31_intro0",
+        "speech_en_lv31_intro1",
+        "speech_en_lv31_intro2",
+        "speech_en_lv31_intro3",
+        "speech_en_lv31_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"This room features not just bright accents but perfect order too! You're a true style master!\"",
+        "\"Style and order meet in this room, creating an absolutely fantastic new atmosphere!\"",
+        "\"You worked like a true designer - order and style are this room's best friends now!\"",
+        "\"This isn't just a room - it's a work of art with perfect order! Magnificent!\"",
+        "\"Now this room isn't just stylish but as neat as a professional's workspace!\""
+      ],
+      "speech": [
+        "speech_en_lv31_outro0",
+        "speech_en_lv31_outro1",
+        "speech_en_lv31_outro2",
+        "speech_en_lv31_outro3",
+        "speech_en_lv31_outro4"
+      ]
+    }
+  },
+  "lv32": {
+    "intro": {
+      "text": [
+        "\"Well, seems this room acquired an aquarium... complete with seagulls! Calling the rescue squad immediately.\"",
+        "\"Someone threw a festival of stuff here - from socks to mysterious artifacts. Time to clean up!\"",
+        "\"Water, fish, feathers... either we're on vacation or in a fairytale movie. Either way, let's save the room from this sea invasion!\"",
+        "\"Feels like items threw their own party. Let's correct this misunderstanding!\"",
+        "\"From pencils to suitcases - everything gathered for a meeting. But we know order makes the best company.\""
+      ],
+      "speech": [
+        "speech_en_lv32_intro0",
+        "speech_en_lv32_intro1",
+        "speech_en_lv32_intro2",
+        "speech_en_lv32_intro3",
+        "speech_en_lv32_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Sea creatures have sailed away, feathered friends have flown - this room is fit for land-dwellers again. Excellent work!\"",
+        "\"Everything in its place, dry land secured - this room is ready for guests, not mermaids!\"",
+        "\"Flood stopped, seagulls satisfied, and we're the true cleaning heroes!\"",
+        "\"Items sorted, elements tamed. Even the furniture seems to be sighing with relief.\"",
+        "\"Great job! Now you can relax here instead of sailing between slippers and teapots.\""
+      ],
+      "speech": [
+        "speech_en_lv32_outro0",
+        "speech_en_lv32_outro1",
+        "speech_en_lv32_outro2",
+        "speech_en_lv32_outro3",
+        "speech_en_lv32_outro4"
+      ]
+    }
+  },
+  "lv33": {
+    "intro": {
+      "text": [
+        "\"This looks like a mini-store of bath treasures! Let's sort things out.\"",
+        "\"Welcome to a bathroom where every item competes for 'most essential' title! Forward to sorting.\"",
+        "\"This arsenal of shampoos and soaps deserves its own exhibition. But we'll create order here, not a museum.\"",
+        "\"Enough stuff here for a week-long spa retreat. But first - everything in its place!\"",
+        "\"This bathroom is like a quest: find what you need among tubes and bottles. Mission begins!\""
+      ],
+      "speech": [
+        "speech_en_lv33_intro0",
+        "speech_en_lv33_intro1",
+        "speech_en_lv33_intro2",
+        "speech_en_lv33_intro3",
+        "speech_en_lv33_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Cleaning mission accomplished with excellence. This bathroom is fit for royal baths again!\"",
+        "\"Great work! Everything shines here now - like a shampoo commercial come to life.\"",
+        "\"Everything neatly arranged - this bathroom is ready for a perfect morning commercial!\"",
+        "\"Miracles happen - this isn't just a bathroom anymore but a temple of cleanliness and coziness!\"",
+        "\"This bathroom might just win 'Most Organized Room of the Month'!\""
+      ],
+      "speech": [
+        "speech_en_lv33_outro0",
+        "speech_en_lv33_outro1",
+        "speech_en_lv33_outro2",
+        "speech_en_lv33_outro3",
+        "speech_en_lv33_outro4"
+      ]
+    }
+  },
+  "lv34": {
+    "intro": {
+      "text": [
+        "\"Oh, someone hosted a festival of forgotten items here. Perfect time to put everything where it belongs!\"",
+        "\"This room definitely had wild weekends. Let's restore its former coziness!\"",
+        "\"Trash and forgotten items conquered this territory - but with our help, the room will become presentable again!\"",
+        "\"Everything that could be forgotten - was forgotten here. Time to activate caring staff mode!\"",
+        "\"This room could tell many stories... if it weren't buried under everything. Forward to excavation!\""
+      ],
+      "speech": [
+        "speech_en_lv34_intro0",
+        "speech_en_lv34_intro1",
+        "speech_en_lv34_intro2",
+        "speech_en_lv34_intro3",
+        "speech_en_lv34_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Brilliant work! From chaos and forgotten items, you've created coziness and cleanliness - now the room welcomes guests with open arms again.\"",
+        "\"Excellent work! This room breathes freshness and order again, all thanks to your efforts.\"",
+        "\"Wow, what a difference! From mess to coziness - it's like the hotel itself is thanking you for such care.\"",
+        "\"Everything organized, trash gone, order restored - brilliant finish! Deserves a medal for cleanliness and attention.\"",
+        "\"Everything shines! You tackled even the most stubborn piles - now the room looks like nothing ever happened. Bravo!\""
+      ],
+      "speech": [
+        "speech_en_lv34_outro0",
+        "speech_en_lv34_outro1",
+        "speech_en_lv34_outro2",
+        "speech_en_lv34_outro3",
+        "speech_en_lv34_outro4"
+      ]
+    }
+  },
+  "lv35": {
+    "intro": {
+      "text": [
+        "\"Could create a quest 'Find the item's owner' here. Well, ready for the challenge?\"",
+        "\"A couple forgotten items - like quiet greetings from past guests. Just need to collect everything neatly!\"",
+        "\"Light mess - like a light breeze. We'll restore coziness in no time!\"",
+        "\"This room is almost ready for new guests. Just a little more - and it'll shine again!\"",
+        "\"A few forgotten trinkets - like tiny puzzles. Let's put everything in order!\""
+      ],
+      "speech": [
+        "speech_en_lv35_intro0",
+        "speech_en_lv35_intro1",
+        "speech_en_lv35_intro2",
+        "speech_en_lv35_intro3",
+        "speech_en_lv35_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Everything found, everything cleaned! Even a couple forgotten trinkets didn't escape your keen eye. Bravo!\"",
+        "\"Great job - the room is tidy, forgotten items collected. Ready to welcome guests!\"",
+        "\"Now that's thorough! Everything sorted, not a single detail missed. The room pleases the eye again.\"",
+        "\"Clean, beautiful and nothing extra - the room looks straight from a catalog. Excellent work!\"",
+        "\"The room breathes cleanliness again, forgotten items carefully collected - you're a true neatness master!\""
+      ],
+      "speech": [
+        "speech_en_lv35_outro0",
+        "speech_en_lv35_outro1",
+        "speech_en_lv35_outro2",
+        "speech_en_lv35_outro3",
+        "speech_en_lv35_outro4"
+      ]
+    }
+  },
+  "lv36": {
+    "intro": {
+      "text": [
+        "\"Soap, shampoos, and something mysterious... Let's turn this chaos into cleanliness!\"",
+        "\"The bathtub looks like a battlefield: brushes, bottles and forgotten hair ties. Forward - for order and hygiene!\"",
+        "\"Seems a cosmetic hurricane passed through here. But we'll handle it - we'll clean with brilliance!\"",
+        "\"The bathroom is calling for help - time to restore its shine and coziness. Let's get to work!\"",
+        "\"So many jars and tubes we could open a store. But first - bring order to this bubble kingdom!\""
+      ],
+      "speech": [
+        "speech_en_lv36_intro0",
+        "speech_en_lv36_intro1",
+        "speech_en_lv36_intro2",
+        "speech_en_lv36_intro3",
+        "speech_en_lv36_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"This bathroom is something to be proud of - shining, smelling fresh, looking like in the best hotels!\"",
+        "\"Like magic - the bathroom sparkles! Everything in place, ready for a photoshoot.\"",
+        "\"Victory over chaos achieved! Not a single shampoo bottle left unattended.\"",
+        "\"Bravo! So much sorted and arranged that even the tiles seem to shine gratefully.\"",
+        "\"Mission accomplished: bathtub like new, all items in place. Excellent work!\""
+      ],
+      "speech": [
+        "speech_en_lv36_outro0",
+        "speech_en_lv36_outro1",
+        "speech_en_lv36_outro2",
+        "speech_en_lv36_outro3",
+        "speech_en_lv36_outro4"
+      ]
+    }
+  },
+  "lv37": {
+    "intro": {
+      "text": [
+        "\"Someone clearly lived large - just need to collect this treasure trove of forgotten items!\"",
+        "\"This room is like a museum of strange finds... Time to sort everything out and return items to their places.\"",
+        "\"Hard to tell what's more prominent here - style or chaos. Let's tidy up with a smile!\"",
+        "\"Enough stuff here to open a flea market. But better collect everything and restore order!\"",
+        "\"Seems we had a tourist, an artist and a magician staying here. Well, let's sort their creative mess!\""
+      ],
+      "speech": [
+        "speech_en_lv37_intro0",
+        "speech_en_lv37_intro1",
+        "speech_en_lv37_intro2",
+        "speech_en_lv37_intro3",
+        "speech_en_lv37_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Wonderful job! The room breathes again, every item has its place - royal order!\"",
+        "\"Wow! You worked so skillfully, like you've been solving scattered puzzles all your life!\"",
+        "\"Bravo! The room shines with cleanliness and calm - guests will be delighted.\"",
+        "\"Everything in its place, and now the room looks like Order itself lives here - great job turning chaos into coziness!\"",
+        "\"Now that's order! You didn't just clean but restored the room's elegance and soul - like breathing new life into it.\""
+      ],
+      "speech": [
+        "speech_en_lv37_outro0",
+        "speech_en_lv37_outro1",
+        "speech_en_lv37_outro2",
+        "speech_en_lv37_outro3",
+        "speech_en_lv37_outro4"
+      ]
+    }
+  },
+  "lv38": {
+    "intro": {
+      "text": [
+        "\"Someone started renovations... and forgot to finish. Let's turn this workshop back into a proper room!\"",
+        "\"Music is wonderful, but wrappers and papers are clearly off-key here. Time to clean up!\"",
+        "\"Screwdrivers, brushes, wires... Could open a workshop here. But we choose coziness over dust!\"",
+        "\"This room clearly survived some renovation battles. Time to finish construction and bring back comfort!\"",
+        "\"When the final chord is played, it's time to clear the stage. Let's deal with the chaos - and make the room shine again!\""
+      ],
+      "speech": [
+        "speech_en_lv38_intro0",
+        "speech_en_lv38_intro1",
+        "speech_en_lv38_intro2",
+        "speech_en_lv38_intro3",
+        "speech_en_lv38_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Great! All tools in their places - now the room is ready for relaxation.\"",
+        "\"Wow! Trash removed, tools put away - looks like we just saved the room from chaos.\"",
+        "\"Repair arsenal packed up, and the room looks like a guest space again, not a furniture assembly area.\"",
+        "\"Beautiful work! Even the strictest craftsman would say: 'Now that's order!'\"",
+        "\"What a cleanliness concert we performed! Drums in their places - the room is ready for guests again, not orchestra rehearsals.\""
+      ],
+      "speech": [
+        "speech_en_lv38_outro0",
+        "speech_en_lv38_outro1",
+        "speech_en_lv38_outro2",
+        "speech_en_lv38_outro3",
+        "speech_en_lv38_outro4"
+      ]
+    }
+  },
+  "lv39": {
+    "intro": {
+      "text": [
+        "\"Perfect order, but finding the right book is still a quest! Ready for a knowledge hunt?\"",
+        "\"Everything's neatly arranged... too neatly. Time for some deduction to find the right volumes!\"",
+        "\"Everything's on shelves, but needed books play hide-and-seek. Let the search begin!\"",
+        "\"This isn't just a library - it's a labyrinth of knowledge. Good thing we have a list!\"",
+        "\"Silence, books, and you - the perfect team. Just need to fish out the right volumes from this ocean of knowledge!\""
+      ],
+      "speech": [
+        "speech_en_lv39_intro0",
+        "speech_en_lv39_intro1",
+        "speech_en_lv39_intro2",
+        "speech_en_lv39_intro3",
+        "speech_en_lv39_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Success! All books in place, the library serves its purpose again. Excellent work!\"",
+        "\"Mission accomplished! We uncovered all the shelves' secrets and brought order to the library.\"",
+        "\"Magnificent! All wisdom collected, order now perfect.\"",
+        "\"Everything shelved properly, knowledge now right at hand. Well done!\"",
+        "\"Mission accomplished: perfect order and books in their places. Now we can relax and enjoy our success!\""
+      ],
+      "speech": [
+        "speech_en_lv39_outro0",
+        "speech_en_lv39_outro1",
+        "speech_en_lv39_outro2",
+        "speech_en_lv39_outro3",
+        "speech_en_lv39_outro4"
+      ]
+    }
+  },
+  "lv40": {
+    "intro": {
+      "text": [
+        "\"Everything's growing like crazy in this greenhouse - time to bring order to these green wonders!\"",
+        "\"Time for some light gardening! Let's help these plants become even greener and brighter.\"",
+        "\"Nature threw a party here! Just needs a little tidying up to make the greenhouse shine with new colors.\"",
+        "\"The green residents are happy in their home, but we need to organize everything so they feel even better.\"",
+        "\"This greenhouse is a real jungle! Time to tidy up and make it even more beautiful.\""
+      ],
+      "speech": [
+        "speech_en_lv40_intro0",
+        "speech_en_lv40_intro1",
+        "speech_en_lv40_intro2",
+        "speech_en_lv40_intro3",
+        "speech_en_lv40_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Your care for the plants hasn't gone unnoticed! The greenhouse now shines with freshness and harmony.\"",
+        "\"All plants in their places, and the greenhouse looks like a true paradise for green friends again! Excellent work!\"",
+        "\"We've brought everything to perfection - now the greenhouse looks like a true corner of nature. Great job!\"",
+        "\"The greenhouse is transformed! We've put it in order, and now it's ready to please the eye.\"",
+        "\"Greenhouse in perfect order! All plants in their places, ready to grow even faster now.\""
+      ],
+      "speech": [
+        "speech_en_lv40_outro0",
+        "speech_en_lv40_outro1",
+        "speech_en_lv40_outro2",
+        "speech_en_lv40_outro3",
+        "speech_en_lv40_outro4"
+      ]
+    }
+  },
+  "lv41": {
+    "intro": {
+      "text": [
+        "\"Looks like a real archaeological expedition passed through here! Time to organize these finds before they disappear into the sands of time again.\"",
+        "\"Feathers everywhere... The birds must've thrown quite a party! Let's clean up quickly and restore order.\"",
+        "\"You don't find archaeological treasures in a hotel room every day! Let's sort everything out and preserve the important exhibits.\"",
+        "\"So many valuable finds in one place! Time to organize before this archaeological collection gets lost.\"",
+        "\"Looks like an entire bird army moved in! Feathers everywhere, but we'll restore order to this feathered kingdom.\""
+      ],
+      "speech": [
+        "speech_en_lv41_intro0",
+        "speech_en_lv41_intro1",
+        "speech_en_lv41_intro2",
+        "speech_en_lv41_intro3",
+        "speech_en_lv41_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Magnificent! All antiquities in their places, and this room is ready to welcome guests again.\"",
+        "\"Feathers and birds are now in their places, and the room looks amazing. We did it!\"",
+        "\"Archaeological chaos transformed into perfect order. This room is ready for new discoveries again!\"",
+        "\"All archaeological finds are now in perfect order! Even the most ancient artifacts have found their home.\"",
+        "\"Birds back in their places, feathers neatly collected. The room is ready for new guests!\""
+      ],
+      "speech": [
+        "speech_en_lv41_outro0",
+        "speech_en_lv41_outro1",
+        "speech_en_lv41_outro2",
+        "speech_en_lv41_outro3",
+        "speech_en_lv41_outro4"
+      ]
+    }
+  },
+  "lv42": {
+    "intro": {
+      "text": [
+        "\"When cats meet Vikings - expect surprises! Let's examine the treasures before the furballs claim everything.\"",
+        "\"Helmets, claws and purring - something's not right here. Time to clean up northern legends and furry mischief!\"",
+        "\"The Kingdom of Trash awaits its hero! Grab your gloves - let's go!\"",
+        "\"There was civilization here once... now it's a test for the strong-willed. Time to clear the territory!\"",
+        "\"Someone hosted a Viking feast and cat party simultaneously! Let's collect the items (and cats) before the next saga begins.\""
+      ],
+      "speech": [
+        "speech_en_lv42_intro0",
+        "speech_en_lv42_intro1",
+        "speech_en_lv42_intro2",
+        "speech_en_lv42_intro3",
+        "speech_en_lv42_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Excellent work! Cats are happy, Vikings too - order restored, and not a single helmet was harmed.\"",
+        "\"Mission accomplished: the furballs didn't manage to steal the loot, and we found everything needed among legends and fur!\"",
+        "\"Magnificent! Even the most chaotic room couldn't withstand your attention - everything found and put in order.\"",
+        "\"Chaos has surrendered! Items sorted, space breathes freely - all thanks to you.\"",
+        "\"Wow! Not a single strange item escaped - a true master of finds in action!\""
+      ],
+      "speech": [
+        "speech_en_lv42_outro0",
+        "speech_en_lv42_outro1",
+        "speech_en_lv42_outro2",
+        "speech_en_lv42_outro3",
+        "speech_en_lv42_outro4"
+      ]
+    }
+  },
+  "lv43": {
+    "intro": {
+      "text": [
+        "\"There's more than soup boiling in this kitchen - time to bring order to the gastronomic chaos!\"",
+        "\"If dishes could walk, they'd have escaped already - but you're here to put everything back!\"",
+        "\"This kitchen clearly survived a hurricane... Time to reassemble the tasty mosaic.\"",
+        "\"Before we serve dishes - we'll serve an example of cleanliness. Go forth, kitchen hero!\"",
+        "\"Welcome to the culinary arena! Every item here is an ingredient for victory.\""
+      ],
+      "speech": [
+        "speech_en_lv43_intro0",
+        "speech_en_lv43_intro1",
+        "speech_en_lv43_intro2",
+        "speech_en_lv43_intro3",
+        "speech_en_lv43_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Great teamwork - order restored, we can invite guests for a cleanliness tasting!\"",
+        "\"Even the chef would say 'Wow!' - now the kitchen looks straight from a culinary magazine again.\"",
+        "\"Magnificent! If cleanliness were rated by Michelin stars - we'd have the full set.\"",
+        "\"We've dealt with all the chaos - now it's a kitchen, not a gastronomic disaster.\"",
+        "\"Culinary front cleared! Just need to put on the winner's apron now.\""
+      ],
+      "speech": [
+        "speech_en_lv43_outro0",
+        "speech_en_lv43_outro1",
+        "speech_en_lv43_outro2",
+        "speech_en_lv43_outro3",
+        "speech_en_lv43_outro4"
+      ]
+    }
+  },
+  "lv44": {
+    "intro": {
+      "text": [
+        "\"Someone clearly hosted a mini festival of stuff here. Shall we sort this creative chaos?\"",
+        "\"Looks like this room became temporary storage. Perfect time to turn it back into a cozy space!\"",
+        "\"Someone was clearly rushing for a train... and forgot everything! Activating super search mode.\"",
+        "\"The scene looks like after a shopping spree gone wild. Let's tidy up!\"",
+        "\"If objects could talk, they'd be screaming: 'Put us back in our places!'\""
+      ],
+      "speech": [
+        "speech_en_lv44_intro0",
+        "speech_en_lv44_intro1",
+        "speech_en_lv44_intro2",
+        "speech_en_lv44_intro3",
+        "speech_en_lv44_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Excellent work! All items in place, and the room looks like from the catalog again.\"",
+        "\"We've tamed this mess! Now the room breathes with coziness and freedom.\"",
+        "\"Seems you're a true expert in rescuing hotel rooms from chaos. Keep it up!\"",
+        "\"What a transformation! Was a storage of random items, became a dream room.\"",
+        "\"We handled the task brilliantly - the mess retreated without a fight!\""
+      ],
+      "speech": [
+        "speech_en_lv44_outro0",
+        "speech_en_lv44_outro1",
+        "speech_en_lv44_outro2",
+        "speech_en_lv44_outro3",
+        "speech_en_lv44_outro4"
+      ]
+    }
+  },
+  "lv45": {
+    "intro": {
+      "text": [
+        "\"Someone was clearly training for gold... then forgot to clean up. We'll fix that!\"",
+        "\"Dumbbells, helmets, sneakers... looks like fitness apocalypse happened here. But we can handle it!\"",
+        "\"Getting this place in shape will take more than a warm-up. Let's go!\"",
+        "\"Equipment's ready - time to turn chaos into championship order!\"",
+        "\"Starting line: chaos. Finish line: perfect order. Just need to complete the cleaning race!\""
+      ],
+      "speech": [
+        "speech_en_lv45_intro0",
+        "speech_en_lv45_intro1",
+        "speech_en_lv45_intro2",
+        "speech_en_lv45_intro3",
+        "speech_en_lv45_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Victory! We didn't just sort out the sports mess - we won a gold medal in order restoration!\"",
+        "\"Great finish! All dumbbells in place, equipment shining - ready for new records.\"",
+        "\"Cleaning workout completed successfully! All sports trophies found their places.\"",
+        "\"The sports corner now looks like from a catalog - thanks to your agility and attention!\"",
+        "\"We've proved that order is also a kind of sport. Well-deserved victory and a clean zone!\""
+      ],
+      "speech": [
+        "speech_en_lv45_outro0",
+        "speech_en_lv45_outro1",
+        "speech_en_lv45_outro2",
+        "speech_en_lv45_outro3",
+        "speech_en_lv45_outro4"
+      ]
+    }
+  },
+  "lv46": {
+    "intro": {
+      "text": [
+        "\"The tables are a gastronomic kaleidoscope! Can we find the right dishes in this tasty chaos?\"",
+        "\"Someone threw a feast for the whole hotel - but we've got the checklist. Forward to correct treats!\"",
+        "\"Orders got mixed, dishes scattered - time to restore tasty order.\"",
+        "\"Every possible dish filled the tables, but we have one goal - find what was ordered!\"",
+        "\"Delicious madness! But we can handle it - let's find everything on the list!\""
+      ],
+      "speech": [
+        "speech_en_lv46_intro0",
+        "speech_en_lv46_intro1",
+        "speech_en_lv46_intro2",
+        "speech_en_lv46_intro3",
+        "speech_en_lv46_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Excellent work! All dishes in place, now we can enjoy the taste of each!\"",
+        "\"All dishes found according to the list! Guests will definitely be pleased!\"",
+        "\"We've found everything on the list! Tables ready, which means the celebration begins!\"",
+        "\"Dishes ready, tables set! Time to enjoy the taste of success!\"",
+        "\"Food quest completed! Appetite warmed up, tasty victory - on the plate!\""
+      ],
+      "speech": [
+        "speech_en_lv46_outro0",
+        "speech_en_lv46_outro1",
+        "speech_en_lv46_outro2",
+        "speech_en_lv46_outro3",
+        "speech_en_lv46_outro4"
+      ]
+    }
+  },
+  "lv47": {
+    "intro": {
+      "text": [
+        "\"Looks like someone threw a general... catastrophe! But we've got mops, rags and superpowers - all under control!\"",
+        "\"Wow! Seems the party was fun... Now let's find what got left behind after the fun!\"",
+        "\"Balloons, confetti, mysterious gifts - this was the party of the century! Forward to clue hunting!\"",
+        "\"The loud banquet's over, but some things got overlooked. Time to sort everything out and recall who ordered what!\"",
+        "\"The party ended, but mysteries remain! Well then, let's go on a festive trail hunt!\""
+      ],
+      "speech": [
+        "speech_en_lv47_intro0",
+        "speech_en_lv47_intro1",
+        "speech_en_lv47_intro2",
+        "speech_en_lv47_intro3",
+        "speech_en_lv47_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Great teamwork! Trash surrendered without a fight, and equipment can now rest.\"",
+        "\"All traces of fun discovered and neatly sorted. Now the room is ready for new events again!\"",
+        "\"It wasn't easy, but we did it. Cleanliness has arrived - solemnly and irrevocably!\"",
+        "\"Cleaning completed! Shine, order and lightness - as if there was never any chaos here!\"",
+        "\"The party was great, but we finished it brilliantly - no scattered surprises left!\""
+      ],
+      "speech": [
+        "speech_en_lv47_outro0",
+        "speech_en_lv47_outro1",
+        "speech_en_lv47_outro2",
+        "speech_en_lv47_outro3",
+        "speech_en_lv47_outro4"
+      ]
+    }
+  },
+  "lv48": {
+    "intro": {
+      "text": [
+        "\"Welcome to the kingdom of jars! Let's search among pickles and jams for needed supplies.\"",
+        "\"Everything here from pickled mushrooms to strawberry jam - let's find the tasty stuff on our list!\"",
+        "\"You could get lost among these preserves, but we know what we're looking for!\"",
+        "\"Everything's labeled and organized, but finding the right jar is like winning the canned goods lottery!\"",
+        "\"Someone stored all this with love, and now we just need to find the tastiest items!\""
+      ],
+      "speech": [
+        "speech_en_lv48_intro0",
+        "speech_en_lv48_intro1",
+        "speech_en_lv48_intro2",
+        "speech_en_lv48_intro3",
+        "speech_en_lv48_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"All jars in place - we can throw a feast, grandma would be proud of us!\"",
+        "\"Found everything on the list - now this pantry looks like a gastronomic treasure trove.\"",
+        "\"Pickles collected, supplies ready - the pantry passed inspection with flying colors!\"",
+        "\"Mission 'Jars' completed successfully - not a single jar escaped our notice!\"",
+        "\"Done! With such finds we could open a mini-store.\""
+      ],
+      "speech": [
+        "speech_en_lv48_outro0",
+        "speech_en_lv48_outro1",
+        "speech_en_lv48_outro2",
+        "speech_en_lv48_outro3",
+        "speech_en_lv48_outro4"
+      ]
+    }
+  },
+  "lv49": {
+    "intro": {
+      "text": [
+        "\"Looks like they just dumped stuff from all suitcases here. Time to organize!\"",
+        "\"Teapots, books, slippers and something unidentifiable got mixed together - let's sort it out!\"",
+        "\"Why not a flea market paradise? Just need to find the items on our list.\"",
+        "\"This room is like Santa's sack, just unwrapped. Let's see what's inside!\"",
+        "\"So much stuff we could open a museum of random finds. Let the tour begin!\""
+      ],
+      "speech": [
+        "speech_en_lv49_intro0",
+        "speech_en_lv49_intro1",
+        "speech_en_lv49_intro2",
+        "speech_en_lv49_intro3",
+        "speech_en_lv49_intro4"
+      ]
+    },
+    "outro": {
+      "text": [
+        "\"Magnificent work! We handled this mess like true masters, every item now in its place!\"",
+        "\"Magnificent! Even the most camouflaged items became our trophies, and the room is truly in order now.\"",
+        "\"Simply incredible! We navigated this maze of mess and found everything needed, now the room is clean!\"",
+        "\"Excellent! You sorted this chaos like an experienced strategist, every item ended up where it belongs.\"",
+        "\"Without your efforts this room would be consumed by chaos, but now everything here is perfect!\""
+      ],
+      "speech": [
+        "speech_en_lv49_outro0",
+        "speech_en_lv49_outro1",
+        "speech_en_lv49_outro2",
+        "speech_en_lv49_outro3",
+        "speech_en_lv49_outro4"
+      ]
+    }
+  }
+}
