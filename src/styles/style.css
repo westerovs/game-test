@@ -41,9 +41,13 @@
     border: 10px groove gray;
 }
 
-canvas {
-    outline: 4px solid black;
-    outline-offset: -4px;
+.game-select {
+    width: 140px;
+    padding: 10px;
+    background: gray;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /*buttons*/
@@ -77,6 +81,7 @@ canvas {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
     padding: 0 10px 10px;
+    margin-top: 10px;
 }
 
 @media (max-width: 900px) {
@@ -118,47 +123,54 @@ canvas {
 /*preview*/
 .preview {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     inset: 0;
     padding: 20px;
     background: rgba(0, 0, 0, 0.9);
     z-index: 9999;
     cursor: pointer;
-}
-
-.preview__container {
-    border: 2px solid gray;
-    display: flex;
-    flex-wrap: wrap;
+    overflow-y: scroll;
+    outline: 4px solid red;
+    outline-offset: -4px;
 }
 
 .preview__title {
-    margin-bottom: 15px;
-    color: #fff;
+    position: absolute;
+    padding: 10px;
+    color: white;
+    background: rgba(24, 24, 24, 0.3);
     font-size: 28px;
     font-weight: bold;
     text-align: center;
 }
 
+.preview__container {
+    border: 2px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .preview__image {
     display: block;
     width: 50%;
-    max-width: 100vw;
-    max-height: 100vh;
-    height: auto;
+    height: fit-content;
     object-fit: contain;
 }
 
 /*story-text*/
 .preview__story {
-    width: 50%;
     max-width: 900px;
-    margin-top: 20px;
     color: #fff;
     padding: 10px;
-    background: rgb(0 0 0 / 50%);
+    background: rgba(16, 73, 14, 0.4);
+}
+
+.preview__story:hover {
+    background: rgb(0 0 0 / 80%);
+    outline: 2px solid gray;
 }
 
 .story-block {
